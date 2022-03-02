@@ -6,24 +6,24 @@
 </head>
 <body>
 <h3>Welcome, Enter The Employee Details</h3>
-<form method="POST" action="addEmployee" modelAttribute="employee">
+<form:form method="POST" action="addEmployee" modelAttribute="employee">
     <table>
         <tr>
             <td>Employee ID:</td>
-            <td><input type="text" name="id"></td>
+            <td><form:input path="id"/></td>
         </tr>
         <tr>
             <td>Employee's name:</td>
-            <td><input type="text" name="name"></td>
+            <td><form:input path="name"/></td>
         </tr>
         <tr>
             <td>Contact's number:</td>
-            <td><input type="text" name="contactNumber"></td>
+            <td><form:input path="contactNumber"/></td>
         </tr>
         <tr>
-            <td><input type="submit" value="Submit"/></td>
+            <td><form:button>Submit</form:button>></td>
         </tr>
     </table>
-</form>
+</form:form>
 </body>
 </html>

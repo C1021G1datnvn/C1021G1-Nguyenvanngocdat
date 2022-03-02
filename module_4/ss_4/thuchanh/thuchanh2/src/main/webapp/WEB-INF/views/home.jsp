@@ -6,24 +6,27 @@
 </head>
 <body>
 <h3>Home</h3>
-<form action="login" method="post" modelAttribute="login">
+<form:form action="login" method="post" modelAttribute="login">
   <fieldset>
     <legend>Login</legend>
     <table>
       <tr>
         <td>Account:</td>
-        <td><input type="text" name="account"></td>
+        <td><form:input path="account"/></td>
       </tr>
+
       <tr>
         <td>Password:</td>
-        <td><input type="password" name="password"></td>
+        <td><form:input path="password"/></td>
       </tr>
+
       <tr>
         <td></td>
-        <td><input type="submit" name="Login"></td>
+        <td><form:button>Login</form:button></td>
       </tr>
+
     </table>
   </fieldset>
-</form>
+</form:form>
 </body>
 </html>
