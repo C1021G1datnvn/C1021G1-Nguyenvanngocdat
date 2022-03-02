@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo hàm số nguyên</title>
+</head>
+<body>
+<script>
+    function daoNguoc(array) {
+        array.reverse();
+        document.write(array)
+    }
+    let x = parseInt(prompt("Nhập số lượng các phần tử: "));
+    let array = [];
+    for (let i = 0; i < x; i++) {
+        array[i] = prompt("Nhập vào các giá trị: " + i);
+    }
+    daoNguoc(array);
+</script>
+</body>
+</html>

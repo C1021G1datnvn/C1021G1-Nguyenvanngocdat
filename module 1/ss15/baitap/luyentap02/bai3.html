@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm tính giai thừa của 1 số dương bất kỳ</title>
+</head>
+<body>
+<script>
+    function giaiThua(x) {
+        let giaTri = 1;
+        for (let i = 1; i <= x; i++) {
+            giaTri *= i;
+        }
+        return giaTri;
+    }
+    let nhapSo = parseInt(prompt("Nhập số vào đây: "));
+    result = giaiThua(nhapSo);
+    alert("Giá trị giai thừa của số đã nhập là: " + result);
+</script>
+</body>
+</html>

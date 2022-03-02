@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>
+            <h1>Caculator</h1>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="nhap">
+        </td>
+        <td>
+            <input type="text" id="nhap1">
+        </td>
+    </tr>
+    <tr id="tinhtoan">
+        <td><button onclick="addition()" type="button">Addition(+)</button></td>
+        <td><button onclick="subtraction()" type="button">Subtraction(-)</button></td>
+        <td><button onclick="multiplication()" type="button">Multiplication(X)</button></td>
+        <td><button onclick="division()" type="button">Division(/)</button></td>
+    </tr>
+</table>
+<script>
+    function addition() {
+        let a = document.getElementById('nhap').value;
+        let b = document.getElementById('nhap1').value;
+        let c = parseInt(a) + parseInt(b);
+        document.writeln('Tổng của 2 số là: ' + c);
+    }
+    function subtraction() {
+        let a = document.getElementById('nhap').value;
+        let b = document.getElementById('nhap1').value;
+        let c = parseInt(a) - parseInt(b);
+        document.writeln('Hiệu của 2 số là: ' + c);
+    }
+    function multiplication() {
+        let a = document.getElementById('nhap').value;
+        let b = document.getElementById('nhap1').value;
+        let c = parseInt(a) * parseInt(b);
+        document.writeln('Tích của 2 số là: ' + c);
+    }
+    function division() {
+        let a = document.getElementById('nhap').value;
+        let b = document.getElementById('nhap1').value;
+        let c = parseInt(a) / parseInt(b);
+        document.writeln('Thương của 2 số là: ' + c);
+    }
+
+</script>
+</body>
+</html>

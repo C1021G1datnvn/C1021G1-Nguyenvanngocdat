@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi suất ngân hàng
+    </title>
+</head>
+<body>
+<script>
+    let money=parseInt(prompt("Nhập số tiền muốn gởi :"));
+    let month=parseInt(prompt("Nhập số tháng muốn gởi :"));
+    let laiSuat= 0.01;
+    let result;
+    for(let i=1;i<=month;i++){
+        result = money + (money * laiSuat);
+        money = result
+    }
+    alert("Số tiền nhận được sẽ là :"+ money);
+</script>
+</body>
+</html>

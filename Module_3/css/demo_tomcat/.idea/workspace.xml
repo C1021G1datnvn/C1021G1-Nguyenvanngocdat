@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f57cb21-73b7-4452-b66c-521e505d0cef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ss_6/baitap3/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss_6/baitap3/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss_6/baitap3/demo3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ss_6/baitap3/demo3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss_8/bai_tap/baitap2/demo2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss_8/bai_tap/baitap2/demoLandingpage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_1/bai_tap/class.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_1/bai_tap/taoclassandteacher.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_1/bai_tap/teacher.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_1/thuc_hanh/student_list.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_1/thuc_hanh/taobang.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_1/thuc_hanh/taodatabase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_1/thuc_hanh/xoadatabase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_2/bai_tap/2022-01-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_2/bai_tap/quanlibanhang.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_2/bai_tap/quanlibanhang1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_2/bai_tap/quanlivattu.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_2/thuc_hanh/quanlidiemthi.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_2/thuc_hanh/quanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_2/thuc_hanh/thuc_hanh1/đạt09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_3/bai_tap/baitap2/insertDulieu.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_3/bai_tap/baitap2/quanlibanhang.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_3/bai_tap/thaotacquanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_3/thuc_hanh/hienthisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_3/thuc_hanh/quanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_4/bai_tap/quanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_4/thuc_hanh/quanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_5/bai_tap/index_storeProcedure_view.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_5/thuc_hanh/thuchanh1/chimuctrongmyql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_5/thuc_hanh/thuchanh1/mysqlsampledatabase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_5/thuc_hanh/thuchanh2/storeprocedure.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_5/thuc_hanh/thuchanh3/thamsoStoreProcedure.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss_5/thuc_hanh/thuchanh4/viewsTrongmysql.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="248cLXIig8DHdJhVxH7Br4z4d9o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../servlet/ss_9/thuchanh/thuchanh1/demo_tomcat" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\C1021G1-Nguyenvanngocdat\Module_3\css\demo_tomcat\src\main\webapp" />
+      <recent name="D:\C1021G1-Nguyenvanngocdat\Module_3\css\demo_tomcat\src\main\java\ss_9\thuchanh\thuchanh2" />
+      <recent name="D:\C1021G1-Nguyenvanngocdat\Module_3\css\demo_tomcat\src\main\java\ss_9\thuchanh\thuchanh3" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.58" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : demo_tomcat-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="3e6b4274-f7de-4347-9804-044e8722deb9" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56207" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : demo_tomcat-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f57cb21-73b7-4452-b66c-521e505d0cef" name="Changes" comment="" />
+      <created>1643015598935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643015598935</updated>
+      <workItem from="1643015600470" duration="1684000" />
+      <workItem from="1643017644023" duration="1356000" />
+      <workItem from="1643037049919" duration="2512000" />
+      <workItem from="1643074796553" duration="626000" />
+      <workItem from="1643075650032" duration="5273000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

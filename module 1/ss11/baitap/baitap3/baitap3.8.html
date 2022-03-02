@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trò chơi</title>
+</head>
+<body>
+<input type="button" onclick="button1()" value="Chơi">
+<script>
+    function button1() {
+        let numbers = parseInt(prompt("Nhập số dự đoán: "));
+        let random = Math.floor(Math.random() * numbers);
+        let dudoan = parseInt(prompt("Nhập số vô đây: "));
+            if (random == dudoan) {
+                alert("Chúc mừng bạn đã trúng giải đặc biệt");
+            }else {
+                while (dudoan != random) {
+                    alert("Sai ròi,sai ròi. ");
+                    dudoan = prompt("Đoán lại đi.");
+                }
+            }
+            alert("Chúc mừng bạn đã trúng giải đặc biệt")
+    }
+</script>
+</body>
+</html>

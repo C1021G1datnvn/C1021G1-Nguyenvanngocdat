@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC;
+        }
+        getDoC() {
+            return this.doC;
+        }
+        convertCtoF() {
+            if (this.doC > -273) {
+                return (this.doC * 1.8) +32;
+            } else {
+                return alert("Nhiệt độ cần lớn hơn -273 độ C.");
+            }
+        }
+        convertCtoK() {
+            if (this.doC > -273) {
+                return this.doC + 273.15;
+            }else {
+                return alert("Nhiệt độ cần lớn hơn -273 độ C.");
+            }
+        }
+    }
+    let nhietDo = parseFloat(prompt("Nhập nhiệt độ: "));
+    let myTemperature = new Temperature(nhietDo);
+    f = myTemperature.convertCtoF();
+    k = myTemperature.convertCtoK();
+    alert("ĐỘ F đổi được là: " + f + "Độ K đổi được là: " + k);
+</script>
+</body>
+</html>

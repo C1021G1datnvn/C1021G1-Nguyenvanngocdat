@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>to Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="amount">
+        </td>
+        <td>
+            <select id="1">
+                <option  value="VND">Việt Nam</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="2">
+                <option value="USD">USD</option>
+                <option value="VND">Việt Nam</option>
+            </select>
+        </td>
+        <td><button onclick="Conv()" type="button" name="convert" style="background-color: blueviolet; color: white">Convert</button></td>
+    </tr>
+    <tr>
+        <td id="result"></td>
+    </tr>
+</table>
+<script>
+    function Conv(){
+        let nhapsotien = (document.getElementById('amount').value)
+        let a = (document.getElementById('1').value)
+        let b = (document.getElementById('2').value)
+        if (a == 'VND' && b == 'USD') {
+            document.getElementById('result').innerHTML = 'Result: ' + nhapsotien/23000 + ('VND');
+        } else if (a == 'USD' && b == 'VND') {
+            document.getElementById('result').innerHTML = 'Result: ' + nhapsotien*23000 + ('USD');
+        }
+    }
+    
+</script>
+</body>
+</html>

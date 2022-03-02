@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .form-background{
+        background-color: burlywood;
+        width: 500px;
+        margin: auto;
+    }
+    .title {
+        color: blue;
+        background-color: skyblue ;
+    }
+    .form-label {
+        color: blue;
+        width: 100px;
+    }
+    .button-background {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .form-input {
+        display: flex;
+        padding-top: 7px;
+    }
+    .form {
+        padding: 10px;
+    }
+</style>
+<body>
+<form class="form-background">
+    <div class="form">
+        <h1 class="title">ĐĂNG KÝ HỌC VIÊN</h1>
+        <div class="form-input">
+            <div class="form-label">
+                <lable>Họ và Tên</lable>
+            </div>
+            <input type="text" name="yourName"/>
+        </div>
+        <div class="form-input">
+            <div class="form-label">
+                <label>Ngày sinh</label>
+            </div>
+            <input type="text" name="birtday"/>
+        </div>
+        <div class="form-input">
+            <div class="form-label">
+                <label>Giới tính</label>
+            </div>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Nam</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Nữ</label>
+            </div>
+        </div>
+        <div class="form-input">
+            <div class="form-label">
+                <label>Địa chỉ</label>
+            </div>
+            <textarea cols="30" rows="5"></textarea>
+        </div>
+        <div class="form-input">
+            <div class="form-label">
+                <label>Lớp</label>
+            </div>
+            <select>
+                <option value="classl">Chọn lớp</option>
+                <option value="class">C0821G1</option>
+                <option value="class">C0921G1</option>
+                <option value="class">C1021G1</option>
+            </select>
+        </div>
+        <div class="form-input">
+            <div class="form-label">
+                <label>Email</label>
+            </div>
+            <input type="text" name="email">
+        </div>
+        <div class="form-input">
+            <div class="form-label">
+                <label>Điện thoại</label>
+            </div>
+            <input type="text" name="phone">
+        </div>
+        <div class="button-background">
+            <button>
+                Đăng ký
+            </button>
+            <button>
+                Nhập lại
+            </button>
+        </div>
+    </div>
+</form>
+</body>
+</html>

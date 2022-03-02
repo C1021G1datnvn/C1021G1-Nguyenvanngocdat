@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function alertMessage(answer) {
+        let result = " ";
+        if (answer) {
+            result = ("Mình cũng chào bạn ^^.");
+        }else {
+            result = ("Chào gì mà chào ^^.");
+        }
+        return  result;
+    }
+    let conFirmMessage = confirm("Xin chào!");
+    let theAnswer = alertMessage(conFirmMessage);
+    alert(theAnswer);
+</script>
+</body>
+</html>

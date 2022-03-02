@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo Ngược ký tự</title>
+</head>
+<body>
+<script>
+    let x = parseInt(prompt("Nhập chuỗi cần đảo ngược: "));
+    let array = [x];
+    for (let i = 0; i < x; i++) {
+        let value = prompt("Nhập các ký tự vào đây:" + i);
+        array[i] = value;
+    }
+    array.reverse();
+    document.write(array.join(""));
+</script>
+</body>
+</html>

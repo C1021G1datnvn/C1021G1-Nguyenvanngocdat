@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Fibonacci</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập vào số lượng Fibonacci:"));
+    let a = 1;
+    let b = 1;
+    for (let i = 1; i < n ; i++) {
+        document.write(a + "<br>");
+        let c = a + b;
+        a = b;
+        b = c;
+    }
+</script>
+</body>
+</body>
+</html>

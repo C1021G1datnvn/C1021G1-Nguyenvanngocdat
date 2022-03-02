@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#menu{
+    height: 50px;
+    padding:0;
+    margin:0;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+}
+
+#menu ul, #menu li{
+    padding:0;
+    margin:0;
+}
+
+#menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+#menu li a{
+    width:100px;
+    height: 30px;
+    display: block;
+    text-decoration:none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+#menu ul ul li a{
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#menu li a:hover{
+    background-color: red;
+}
+
+#menu ul ul{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+}
+
+#title{
+    background: grey;
+    width: 100%;
+    height: 50px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+body{
+    font-family: Arial;
+}
+
+@media only screen and (max-width: 1024px){
+    [class*="col-"] {
+        width: 100%;
+    }
+    .main{
+        display: block;
+    }
+}
+@media only screen
+and (max-width: 768px) {
+    #header-button {
+        position: relative;
+    }
+}
+#main {
+
+    width: 100%;
+    height: 600px;
+}
+.main13 {
+
+    width: 20%;
+    height:600px ;
+    float: left;
+    padding: 80px;
+}
+#main2 {
+
+    width: 59%;
+    height: 600px;
+    float: left;
+}
+#footer{
+    background: grey;
+    width: 100%;
+    height: 20px ;
+    clear: left;
+}
+#chia1 {
+    border: 3px solid blue;
+    width: 100%;
+    height: 299px;
+}
+#chia2 {
+    border: 3px solid chartreuse;
+    width: 100%;
+    height: 299px;
+}
+.magin1 {
+    text-align: center;
+    background-color: grey;
+    padding: 30px;
+}
+.magin2 {
+    text-align: center;
+    background-color: grey;
+    padding: 30px;
+}
+.text {
+    text-align: center;
+
+}

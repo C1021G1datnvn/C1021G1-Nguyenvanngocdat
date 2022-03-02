@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số dương</title>
+</head>
+<body>
+<script>
+    function kiemTra(x) {
+        if (x > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let nhapSo = parseInt(prompt("Nhập vào 1 số: "));
+    result = kiemTra(nhapSo);
+    if (result) {
+        alert("Đây là 1 số dương.");
+    }else {
+        alert("Đây không phải là 1 số dương.");
+    }
+</script>
+</body>
+</html>

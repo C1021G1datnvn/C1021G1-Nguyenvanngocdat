@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu vi và Diện tích hình tròn</title>
+</head>
+<body>
+<script>
+    function dienTich(x) {
+        s = Math.pow(x,2) * Math.PI;
+        return s;
+    }
+    function chuVi(x) {
+        c = 2 * x * Math.PI;
+        return c
+    }
+    let s;
+    let c;
+    let nhapSo = parseFloat(prompt("Nhập giá trị để tính Diện tích và Chu vi hình tròn:"));
+    resultS = dienTich(nhapSo);
+    resultC = chuVi(nhapSo)
+    alert("Diên tích hình Tròn là: " + resultS + "Chu vi hình tròn là: " + resultC);
+</script>
+</body>
+</html>

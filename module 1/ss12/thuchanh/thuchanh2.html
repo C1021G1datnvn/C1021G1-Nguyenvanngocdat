@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược các giá trị trong Mảng</title>
+</head>
+<body>
+<script>
+    let x = [-3, 5, 1, 3, 2, 10];
+    let fisrt = 0;
+    let b;
+    let last = x.length - 1;
+    while(fisrt < last) {
+        b = x[fisrt];
+        x[fisrt] = x[last];
+        x[last] = b;
+        fisrt++;
+        last--;
+    }
+    document.write(x);
+</script>
+</body>
+</html>

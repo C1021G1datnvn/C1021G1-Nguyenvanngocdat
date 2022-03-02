@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chèn dấu - vào dãy số</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập vào một chuỗi số: ");
+    let x = [number[0]];
+    let i;
+    for (i = 1; i <= number.length; i++) {
+        if (number[i - 1] % 2 === 0 && number[i] % 2 === 0) {
+            x.push("-", number[i]);
+        }else {
+            x.push(number[i]);
+        }
+    }
+    document.write("Dãy số được nhập vào là:" + number + "<br>");
+    document.write(x.join(""));
+</script>
+</body>
+</html>

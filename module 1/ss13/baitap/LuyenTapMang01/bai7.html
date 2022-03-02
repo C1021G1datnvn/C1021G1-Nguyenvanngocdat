@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xoá số nguyên V khỏi mảng</title>
+</head>
+<body>
+<script>
+    let x = 10;
+    let array = [x];
+    let index;
+    for (let i = 1; i < 10; i++) {
+        value = parseInt(prompt("Nhập giá trị các phần tử có trong mảng: "+ i));
+        array[i] = value;
+    }
+    let v = parseInt(prompt("Nhập số nguyên V: "))
+    let check = false;
+    for (let i = 0; i < 10; i++) {
+        if (array[i] == v) {
+            index = i;
+            check = true;
+            break;
+        }
+    }if (check === true) {
+        array.splice(index, 1);
+        array.push(0);
+        document.write(array.toString());
+    }else alert("V không có trong mảng.");
+    
+</script>
+</body>
+</html>

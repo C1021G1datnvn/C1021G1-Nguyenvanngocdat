@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số nguyên âm trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập số lượng số nguyên âm"));
+    let array = [n];
+    let count = 0;
+    for (let i = 0; i < n; i++)
+    {
+        let value = parseInt(prompt("Nhập số nguyên âm: " + (i+1)));
+        array [i] = value;
+        if (array[i] < 0) {
+            count = count + 1;
+        }
+    }
+    alert("Mảng vừa nhập có"+ count + "số nguyên âm.");
+</script>
+</body>
+</html>

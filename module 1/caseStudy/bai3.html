@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if và switch case</title>
+</head>
+<body>
+<script>
+    // let thuNhap = parseFloat(prompt("Nhập số lương của bạn: " + "Đơn vị tính bằng triệu đồng."));
+    // if (thuNhap >= 15) {
+    //     alert("Số tiền thuế phải đóng là: " + (thuNhap * 20/100) + "Số tiền bạn nhận được là: " + (thuNhap - (thuNhap * 20/100)));
+    // } else if (thuNhap >= 7) {
+    //     alert("Số tiền thuế phải đóng là: " + (thuNhap * 10/100) + "Số tiền bạn nhận được là: " + (thuNhap - (thuNhap * 10/100)));
+    // }else {
+    //     alert("Số tiền thuế phải đóng là: " + (thuNhap * 5/100) + "Số tiền bạn nhận được là: " + (thuNhap - (thuNhap * 5/100)));
+    // }
+    
+    let kyTu = prompt("Nhập ký tự bạn cần kiểm tra: ");
+    let array = ["e", "u", "o", "a", "i"];
+    let check = true;
+    for (let i = 0; i < array.length; i++) {
+        if (kyTu.toLowerCase() === array[i]) {
+            check = true;
+            break;
+        }else {
+            check = false;
+        }
+    }
+    if (check) {
+        alert("Là nguyên âm.")
+    }else {
+        alert("Là phụ âm.")
+    }
+</script>
+</body>
+</html>

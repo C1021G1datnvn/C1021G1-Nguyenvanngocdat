@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lí sản phẩm</title>
+</head>
+<body>
+<h1>ADD NEW PRODUCT</h1>
+<input type="text" placeholder="New Product" id="inputtext">
+<input type="button" id="addProduct" onclick="Add()" value="Add">
+<input type="button" id="search" onclick="Search()" value="Search">
+<h1>DISPLAY ALL PRODUCT</h1>
+<p id="displayProduct"></p>
+<script>
+let danhSach = ["iPhone", "SamSung", "Nokia", "Oppo", "Realme"];
+sapXepDanhSach(danhSach);
+xuatDanhSach(danhSach);
+function display(x) {
+    let tableDanhSach = "<table border='1'>\n";
+    "<tr>"\n +
+        "<th>No</th>\n" +
+        "<th>Name</th>\n" +
+        "<th>Edit</th>\n" +
+        "<th>Delete</th>\n" +
+    "</tr>\n"
+    for (let i = 0; i < x.length; i++) {
+        tableDanhSach += "<tr>\n"
+    }
+    
+}
+</script>
+</body>
+</html>

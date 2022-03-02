@@ -1,0 +1,10 @@
+begin 
+	input:
+		"Nhap ba so a, b, c"
+		a = max 
+		if (b > max) 
+		output: "b la so lon nhat "
+		else if (c > max) 
+		output: "c la so lon nhat"
+		else output "a la so lon nhat"
+end.

@@ -1,0 +1,8 @@
+link repository vừa tạo: https://github.com/C1021G1datnvn/my-new-project.git
+
+ý nghĩa của các câu lệnh đã sữ dụng là:
+git init: khởi tạo 1 reposotory mới
+git remote add origin: kết nối remote repository 
+git add: đưa file vào chỉ mục git
+git commit: để lưu các thay đổi
+git push: để lưu các thay đổi ở local repository lên trên remote repository

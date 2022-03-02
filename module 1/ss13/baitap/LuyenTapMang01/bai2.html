@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số lớn nhất trong 10 số nguyên</title>
+</head>
+<body>
+<script>
+    let array = [10];
+    let max = array[0];
+    let index = 0;
+    for(i = 1; i <= 10; i++ ) {
+        number = parseInt(prompt("Nhập các số nguyên vào tại đây: " + i));
+        array[i] = number;
+    }
+    for (i = 1; i < array.length; i++) {
+        if (array[i] >= max) {
+            index = i + 1;
+            max = array[i] ;
+        }
+    }
+    document.write("Số lớn nhất là: "+ max +"Ở vị trí: "+ index);
+</script>
+</body>
+</html>

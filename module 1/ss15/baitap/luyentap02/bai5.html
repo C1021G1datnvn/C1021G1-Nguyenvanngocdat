@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị nhỏ nhất trong 3 số</title>
+</head>
+<body>
+<script>
+    function soSanh(a, b, c)
+    {
+        if (a < b && a < c)
+        {
+            return a;
+        } else if(b < a && b < c)
+        {
+            return b;
+        }else return c;
+    }
+    let nhapSoa = parseInt(prompt("Nhập số: "));
+    let nhapSob = parseInt(prompt("Nhập số: "));
+    let nhapSoc = parseInt(prompt("Nhập số: "));
+    result = soSanh(nhapSoa,nhapSob,nhapSoc);
+    alert("Số nhỏ nhất trong 3 số là:" + result);
+</script>
+</body>
+</html>

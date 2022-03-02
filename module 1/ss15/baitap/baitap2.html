@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ meter qua feet</title>
+</head>
+<body>
+<h2>Chuyển đổi từ Meter qua Feet và ngược lại</h2>
+<p>
+    <label>Meter:</label>
+    <input type="number" placeholder="Meter" id="inputMeter"
+    oninput="convertDistance(this.value)"
+    onchange="convertDistance(this.value)">
+<p>Feet: <span id="outFeet"></span></p>
+</p>
+<p>
+    <label>Feet:</label>
+    <input type="number" placeholder="Feet" id="inputFeet"
+           oninput="convertDisTance(this.value)"
+           onchange="convertDisTance(this.value)"
+    >
+</p>
+<p>Meter: <span id="outMeter"></span></p>
+<script>
+    function convertDistance(meter) {
+        meter = parseFloat(meter);
+        document.getElementById("outFeet").innerHTML = (meter * 3.29);
+    }
+    function convertDisTance(feet) {
+        feet = parseFloat(feet);
+        document.getElementById("outMeter").innerHTML = (feet * 0.305);
+    }
+</script>
+</body>
+</html>

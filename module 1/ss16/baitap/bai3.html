@@ -1,0 +1,77 @@
+<!DO    CTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô tả điện thoại</title>
+</head>
+<body>
+<script>
+    class Mobile {
+       constructor(pin) {
+            this.pin = pin;
+            this.soan =[];
+            this.hopThuNhan =[];
+            this.hopThuGoi =[];
+            this.status=true;
+        }
+        checkPin() {
+            if (this.pin <= 0) {
+                this.status = false;
+            }else {
+                this.status = true;
+            }
+        }
+        checkStatusOnandOff() {
+            if (this.status == false) {
+                alert("Điện thoại sụp nguồn");
+            }else {
+                alert("Điện thoại bật nguồn");
+            }
+        }
+        phoneCharger() {
+            if (this.pin <= 20) {
+                alert("Đút dây sạc vào cho em.");
+            }else if (this.pin <= 80) {
+                alert("Pin ổn.");
+            }
+            else {
+            alert("Pin đầy.");
+            }
+        }
+        typeMess(soanTinNhan) {
+            if (this.status == false) {
+                return;
+            }else {
+                this.soan += soanTinNhan;
+                this.nangLuongTonThat();
+            }
+        }
+        takeMess(nhanTinNhan) {
+            if (this.status == false) {
+                return;
+            }else {
+                this.hopThuNhan += nhanTinNhan;
+                this.nangLuongTonThat();
+            }
+        }
+        sendMess(dienThoaiNhan) {
+            if (this.status == false) {
+            }else {
+                dienThoaiNhan.takeMess(this.soan);
+                this.hopThuGoi += this.soan;
+                this.soan = "";
+                this.nangLuongTonThat();
+            }
+        }
+        nangLuongTonThat() {
+            this.pin -= 1;
+        }
+    }
+    let iPhone = new Mobile(100);
+    let samSung = new Mobile(100);
+    iPhone.typeMess("Chào em!");
+    iPhone.sendMess(samSung);
+    console.log(samSung);
+</script>
+</body>
+</html>

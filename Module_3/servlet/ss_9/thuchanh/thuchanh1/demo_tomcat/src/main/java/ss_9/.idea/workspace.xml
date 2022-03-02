@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efdcf54f-ffbf-426e-921a-455469e269d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../ss_6/baitap3/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../ss_6/baitap3/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ss_6/baitap3/demo3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../ss_6/baitap3/demo3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_1/bai_tap/class.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_1/bai_tap/taoclassandteacher.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_1/bai_tap/teacher.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_1/thuc_hanh/student_list.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_1/thuc_hanh/taobang.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_1/thuc_hanh/taodatabase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_1/thuc_hanh/xoadatabase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_2/bai_tap/2022-01-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_2/bai_tap/quanlibanhang.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_2/bai_tap/quanlibanhang1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_2/bai_tap/quanlivattu.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_2/thuc_hanh/quanlidiemthi.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_2/thuc_hanh/quanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_2/thuc_hanh/thuc_hanh1/đạt09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_3/bai_tap/baitap2/insertDulieu.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_3/bai_tap/baitap2/quanlibanhang.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_3/bai_tap/thaotacquanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_3/thuc_hanh/hienthisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_3/thuc_hanh/quanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_4/bai_tap/quanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_4/thuc_hanh/quanlisinhvien.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_5/bai_tap/index_storeProcedure_view.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_5/thuc_hanh/thuchanh1/chimuctrongmyql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_5/thuc_hanh/thuchanh1/mysqlsampledatabase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_5/thuc_hanh/thuchanh2/storeprocedure.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_5/thuc_hanh/thuchanh3/thamsoStoreProcedure.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../ss_5/thuc_hanh/thuchanh4/viewsTrongmysql.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectId" id="248gRKWb7VxsSy5wugYuFQM3cvV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efdcf54f-ffbf-426e-921a-455469e269d8" name="Changes" comment="" />
+      <created>1643017618793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643017618793</updated>
+      <workItem from="1643017619876" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

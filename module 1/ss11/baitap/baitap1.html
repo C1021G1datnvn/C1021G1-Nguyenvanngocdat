@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinh bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let num, i, j;
+    num = "<table border='1'>";
+    i = 1, j = 2;
+    while(i <= 9) {
+       num = num + "<tr>";
+       while(j <= 9) {
+           num = num + "<td width='300px'>" + `${j} x ${i}` + " = " + i * j + "</td>";
+           j++;
+       }
+        num = num + "</tr>";
+       j = 2;
+       i++;
+    }
+    num = num + "</table>";
+    document.writeln(num);
+</script>
+</body>
+</html>

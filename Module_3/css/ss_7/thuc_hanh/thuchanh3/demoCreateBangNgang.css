@@ -1,0 +1,56 @@
+body {
+    font-family: Arial;
+}
+
+#div1 {
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+}
+
+#div1 ul, #div1 li {
+    padding: 0;
+    margin: 0;
+}
+
+#div1 li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#div1 li a {
+    width: 100px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+#div1 ul ul li a {
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#div1 li a:hover {
+    background-color: red;
+}
+
+#div1 ul ul {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    visibility: hidden;
+}
+
+#div1 ul li:hover ul {
+    visibility: visible;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hình chữ nhật</title>
+</head>
+<body>
+<script>
+    let x = parseInt(prompt("Nhập vào chiều dài HCN: "));
+    let y = parseInt(prompt("Nhập vào chiều rộng HCN: "));
+    for (let i = 1; i <= x; i++) {
+        for (let j = 1; j <= y; j++) {
+            if (i === 1 || i === x || j === 1 || j === y) {
+                document.write("*");
+            } else {
+                document.write("&ensp;");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

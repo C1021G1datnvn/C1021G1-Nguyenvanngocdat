@@ -1,0 +1,21 @@
+.div1 {
+    border-top: 5px chartreuse;
+    border-right: 5px aqua;
+    border-bottom: 5px blue;
+    border-left: 5px purple;
+    border-style: solid;
+    width: 70%;
+    padding: 10px;
+}
+#id1 {
+    border-style: dotted;
+    border-color: red;
+}
+#id2 {
+    border-style: dotted;
+    border-color: red;
+}
+#id3 {
+    border-style: dotted;
+    border-color: red;
+}

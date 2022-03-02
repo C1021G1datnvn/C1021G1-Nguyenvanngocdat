@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thay đổi dấu '-' thành '_'</title>
+</head>
+<body>
+<script>
+    let mang = [prompt("Nhập vào một chuỗi")];
+    let newMang = [];
+    document.write("Mảng vừa được nhập vào là: " + mang + "<br>");
+    for (let i = 0; i < mang.length ; i++){
+        for (let j = 0; j < mang[i].length; j++){
+            if(mang[i][j] === "-"){
+                mang[i][j] = "_"
+                newMang.push("_")
+            }else{
+                newMang.push(mang[i][j])
+            }
+        }
+    }
+    document.write("Mảng sửa lại là: " + newMang.join("") + "<br>")
+</script>
+</body>
+</html>

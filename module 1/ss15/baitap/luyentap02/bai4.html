@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra có phải số hay không?</title>
+</head>
+<body>
+<script>
+    function kiemTra(x) {
+            if (x % 2 === 0 || x % 2 === 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+    }
+
+    let nhapSo = parseInt(prompt("Nhập giá trị cần check."));
+    let check = kiemTra(nhapSo);
+    if (check)
+    {
+        alert("Đây là 1 số.");
+    }
+    else
+        {
+            alert("Đây không phải là 1 số.");
+        }
+</script>
+</body>
+</html>

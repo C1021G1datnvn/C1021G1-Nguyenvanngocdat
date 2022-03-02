@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng Fibonacci</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập vào số lượng Fibonacci:"));
+    let a = 1;
+    let b = 1;
+    let sum = 0;
+    for (let i = 1; i < n ; i++) {
+        document.write(a + "<br>");
+        let c = a + b;
+        a = b;
+        b = c;
+        sum += a;
+    }
+    document.write("Sum của 20 số Fibonacci là: " + sum);
+</script>
+</body>
+</html>

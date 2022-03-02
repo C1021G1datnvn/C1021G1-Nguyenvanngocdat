@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+<script>
+    let numbers = parseInt(prompt("Nhập số lượng số nguyên tố cần in ra: "));
+    let count = 0;
+    let n = 2;
+    let i;
+    let check;
+    while (count < numbers) {
+        check = true;
+        for (i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                check = false;
+                break;
+            }
+        }
+        if (check) {
+            document.write(n);
+            document.write("<br>");
+            count++;
+        }
+        n++;
+        check = true;
+    }
+    
+</script>
+</body>
+</html>

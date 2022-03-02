@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng Công tắt bóng đền</title>
+</head>
+<body>
+<script>
+    class SwithButton {
+        constructor(status, electricLamp) {
+            this.status = true;
+            this.electricLamp = electricLamp;
+        }
+        connectToLamp() {
+            return this.electricLamp;
+        }
+        checkOn() {
+            this.status = true;
+        }
+        checkOff() {
+            this.status = false;
+        }
+    }
+    class ElectricLamp {
+        constructor() {
+            this.status = true;
+        }
+        turnOn() {
+            if (SwithButton.status == true) {
+                this.status = true;
+                return console.log("Đèn đã được bật sáng.");
+            }else {
+                this.status = false;
+                return console.log("Đèn đã được tắt.");
+            }
+        }
+    }
+    let myButton = new SwithButton();
+    let myLamp = new ElectricLamp();
+    console.log(myLamp);
+    myButton.checkOn();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên V</title>
+</head>
+<body>
+<script>
+    let x = 10;
+    let array = [x];
+    for (let i = 1; i < 10; i++) {
+        value = parseInt(prompt("Nhập giá trị các phần tử có trong mảng: "+ i));
+        array[i] = value;
+    }
+    let v = parseInt(prompt("Nhập số nguyên V: "))
+    let check = false;
+    for (let i = 0; i < 10; i++) {
+        if (array[i] == v) {
+            check = true;
+            break;
+        }
+    }if (check === true) {
+        alert("V có trong mảng.");
+    }else alert("V không có trong mảng.");
+</script>
+
+</body>
+</html>

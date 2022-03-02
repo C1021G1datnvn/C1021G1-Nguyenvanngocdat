@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập chữ hoa</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập chuỗi văn bản mà bạn cần in hoa");
+    let chuHoa = "ABCDEFGHJKLMNOPQRSTUVWXYZ";
+    let chuThuong = "abcdefghjklmnopqrstuvwxyz";
+    let ketQua = [];
+    for (let x = 0; x < str.length; x++) {
+        if (chuHoa.indexOf(str[x]) !== -1) {
+            ketQua.push(str[x].toLocaleLowerCase());
+        }   else if (chuThuong.indexOf(str[x]) !== -1) {
+            ketQua.push(str[x].toLocaleUpperCase());
+        }else {
+            ketQua.push(str[x]);
+        }
+    }document.write(ketQua.join(""));
+</script>
+</body>
+</html>
+

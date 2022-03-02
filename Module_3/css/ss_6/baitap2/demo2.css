@@ -1,0 +1,25 @@
+body {
+    font-size: 150%;
+}
+#code1 {
+    font-size: 30px;
+    text-align: left;
+    color: black;
+    border-bottom: solid ;
+}
+#code2 {
+    margin-top: -20px;
+    text-align: left;
+    font-size: 15px;
+}
+.color1 {
+    color: black;
+    font-weight: bold;
+}
+.color2 {
+    color: blue;
+}
+.indention {
+    text-indent: 20px;
+    font-family: VnArial;
+}

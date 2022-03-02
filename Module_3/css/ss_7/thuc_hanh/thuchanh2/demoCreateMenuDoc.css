@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    background-color: #f1ecca;
+}
+
+#div1, #div1 ul, #div1 li {
+    padding: 0;
+    margin: 0;
+}
+
+#div1 li {
+    list-style: none;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    padding: 0 20px;
+    background-color: black;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+#div1 li a {
+    text-decoration: none;
+    color: white;
+}
+
+#div1 li:hover {
+    background-color: red;
+}
+
+#div1 ul ul {
+    position: absolute;
+    top: 0;
+    left: 175px;
+    visibility: hidden;
+}
+
+#div1 ul li:hover ul {
+    visibility: visible;
+}

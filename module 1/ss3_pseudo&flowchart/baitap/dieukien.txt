@@ -1,0 +1,12 @@
+begin 
+	input d
+	if d > 75 
+		output xep loai A
+	else if 65 <= d < 75
+		output xep loai B
+	else if 45 <= d < 60 
+		output xep loai C
+	else if 35 <= d < 45 
+		output xep loai D
+	else 
+		output xep loai E

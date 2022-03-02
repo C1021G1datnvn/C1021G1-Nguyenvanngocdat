@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số kì tự số trong mảng</title>
+</head>
+<body>
+<script>
+    let x = parseInt(prompt("Nhập số lượng kí tự vào đây: "));
+    let array = [x];
+    let count = 0;
+    for (let i = 0; i < x; i++) {
+        let value = prompt("Nhập giá trị tại đây; " + (i+1));
+        array[i] = value;
+    }
+    for ( let i = 0; i < x; i++) {
+    let x = parseInt(array[i] % 1);
+        if (x === 0) {
+            count = count + 1
+        }
+    }
+    document.write("Số kí tự được nhập là: " + count);
+</script>
+</body>
+</html>

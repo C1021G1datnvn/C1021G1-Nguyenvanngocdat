@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng và hàm</title>
+</head>
+<body>
+<script>
+    let n = prompt("Nhập số lượng phần tử mảng: ");
+    let array = [n];
+    for (let i = 0; i < n; i++) {
+        let value = prompt("Nhập giá trị các phần tử:" + i);
+        array[i] = value;
+    }
+    let a = prompt("Nhập 1 ký tự bất kỳ.");
+    let count = 0;
+    function soSanh(x) {
+        for (let j = 0; j < array.length; j++) {
+            if (x === array[j]) {
+                count++;
+            }
+        }
+        alert("Kí tự vừa nhập xuất hiện lần thứ:" + count);
+    }
+    soSanh(a);
+</script>
+</body>
+</html>

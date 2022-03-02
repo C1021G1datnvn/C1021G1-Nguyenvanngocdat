@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thao tác với Mảng</title>
+</head>
+<body>
+<h2>
+    Sameple Screen
+</h2>
+<input type="text" id="textInput">
+<input type="button" id="add" value="Add" onclick="addGiaTri()">
+<input type="button" id="out" value="Display" onclick="outGiatri()">
+ <div id="result"></div>
+<script>
+    let x = 0;
+    let array = Array ();
+    let i;
+    function addGiaTri() {
+        array [x] = document.getElementById("textInput").value;
+        alert("Element: " + array[x] +"-Added at Index- " + x);
+        x++;
+        document.getElementById("textInput").value = " ";
+    }
+    function outGiatri() {
+        let e = "<hr/>";
+        for(i = 0; i < array.length; i++) {
+            e += "Element" + i + "=" + array[i] + "<br/>";
+            document.getElementById("result").innerHTML = e
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp học lực</title>
+</head>
+<body>
+<script>
+    let bkt = parseFloat(prompt("Nhập điểm kiểm tra"));
+    let gk = parseFloat(prompt("Nhập điểm giữa kỳ"));
+    let ck = parseFloat(prompt("Nhập điểm cuối kỳ"));
+    let dtb = (bkt + gk + ck)/3;
+    if (dtb >= 8) {
+        alert("Học lực Giỏi")
+    } else if(dtb >= 6.5) {
+        alert("Học sinh Khá");
+    } else if (dtb >= 3.5) {
+        alert("Học sinh Yếu")
+    }else alert("Học sinh Kém");
+</script>
+</body>
+</html>

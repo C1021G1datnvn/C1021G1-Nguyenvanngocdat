@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remote TV</title>
+</head>
+<body>
+<script>
+    class TiVi {
+        constructor(kenhTv, amluong) {
+            this.kenhTv = kenhTv;
+            this.amLuong = amluong;
+            this.status = true;
+        }
+        checkTvOnOff() {
+            if (this.status === true) {
+                console.log("Tivi đang bật.")
+            }else {
+                console.log("Tivi đang tắt.")
+            }
+        }
+        swapKenh(kenhTv){
+            if (this.status === false) {
+                return;
+            }else {
+                this.kenhTv = kenhTv;
+                return this.kenhTv;
+            }
+        }
+        tangAmluong() {
+            this.amLuong += 10;
+        }
+        giamAmluong() {
+            this.amLuong -= 10;
+        }
+        checkVolume(){
+            return this.amLuong;
+        }
+    }
+    class Remote {
+        constructor(tivi) {
+            this.tivi = tivi;
+            this.status = true;
+        }
+        turnOn() {
+            this.tivi.status = true;
+        }
+        turnOff() {
+            this.tivi.status = false;
+        }
+        changeChannel(kenhTv){
+            this.tivi.swapKenh(kenhTv);
+            console.log("Kênh đã được chuyển qua kênh: " + this.tivi.swapKenh(kenhTv));
+        }
+        increaseAmLuong(){
+            this.tivi.tangAmluong();
+        }
+        decreaseAmLuong(){
+            this.tivi.giamAmluong();
+        }
+    }
+    let tiVi = new TiVi("HTV2",30);
+    let remote = new Remote(tiVi);
+    tiVi.checkTvOnOff()
+    remote.turnOff()
+    tiVi.checkTvOnOff()
+    remote.turnOn()
+    tiVi.checkTvOnOff()
+    remote.changeChannel("DN1")
+    remote.increaseAmLuong()
+    console.log(tiVi.checkVolume())
+    remote.decreaseAmLuong()
+    console.log(tiVi.checkVolume());
+</script>
+</body>
+</html>

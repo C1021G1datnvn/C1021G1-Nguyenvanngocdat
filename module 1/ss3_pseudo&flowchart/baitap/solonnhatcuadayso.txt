@@ -1,0 +1,22 @@
+BEGIN
+    INPUT N
+    i = 1
+    While i <= n
+        Do
+        INPUT ai
+        i = i + 1
+        End Do
+    max = a1
+    If i >= N
+    Display max
+    End If
+    i = 2
+    While i <= N
+        Do
+        If ai > max
+        max = ai
+        End If
+        i = i + 1
+        End Do
+    Display max
+END

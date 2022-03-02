@@ -1,0 +1,17 @@
+h1 {
+    color: green;
+    font-family: Tahoma;
+    font-size: 50px;
+    text-align: center;
+}
+p {
+    color: red;
+    font-family: VnArial;
+    font-size: 25px ;
+    text-align: center;
+    border: solid;
+    padding: 10px;
+}
+#id {
+   color: cornflowerblue;
+}

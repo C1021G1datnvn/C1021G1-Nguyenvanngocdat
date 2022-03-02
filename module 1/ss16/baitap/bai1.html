@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script>
+    class Rectangl {
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+        dienTich() {
+            let dientich = this.dai * this.rong;
+                return dientich;
+            }
+        chuVi() {
+            let chuvi = (this.dai + this.rong) * 2;
+                return chuvi;
+            }
+    }
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#fa4a2b";
+    ctx.fillRect(50, 100, 80 ,320);
+    
+    let dai = parseInt(prompt("Nhập chiều dài: "));
+    let rong = parseInt(prompt("Nhập chiều rộng: "))
+    let hcNhat = new Rectangl(dai, rong);
+    alert("Diện tích là: " + hcNhat.dienTich());
+    alert("Chu vi là: " +hcNhat.chuVi());
+</script>
+</body>
+</html>

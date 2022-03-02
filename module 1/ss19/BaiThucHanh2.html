@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Hoàn Hảo</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập số nguyên dương bạn muốn kiểm tra: "));
+    function kiemTraSoHoanHao() {
+        let sum = 0;
+        for (let i = 1; i < number; i++) {
+            if (number % i === 0) {
+                sum = sum + i;
+            }
+        }
+        if (sum === number) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+    kiemTraSoHoanHao();
+    alert(kiemTraSoHoanHao(number));
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 2 chuỗi có giống nhau không?</title>
+</head>
+<body>
+<script>
+    let x = prompt("Nhập chuỗi kí tự 1 vào: ");
+    let y = prompt("Nhập chuỗi kí tự 2 vào: ");
+    let arrayx = x.split(" ");
+    let arrayy = y.split(" ");
+    let check;
+    if (arrayx.length !== arrayy.length) {
+        alert("Chuỗi 1 và chuỗi 2 khác nhau");
+    }else {
+        for(i=0;i<arrayx.length;i++)
+        {
+            if (arrayx[i] === arrayy[i]) {
+                check = true;
+            } else {
+                check = false;
+            }
+        }
+    } if (check === true) {
+        document.write(" 2 chuỗi giống nhau");
+    } else document.write("2 chuỗi khác nhau");
+    
+</script>
+</body>
+</html>

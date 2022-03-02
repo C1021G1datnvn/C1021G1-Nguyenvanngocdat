@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gồm 2 mảng số nguyên</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    let a = [];
+    for (let i = 1; i <= 10; i++) {
+        let valuea = parseInt(prompt("Nhập giá trị của mảng a vị trị: "+ i));
+        a[i] = valuea;
+    }
+    let b = [];
+    for (let i = 1; i <= 10; i++) {
+        let valueb = parseInt(prompt("Nhập giá trị của mảng b vị trị: "+ i));
+        b[i] = valueb;
+    }
+    let c;
+    c = a.concat(b);
+    document.write(c);
+</script>
+</body>
+</html>

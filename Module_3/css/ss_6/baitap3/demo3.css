@@ -1,0 +1,59 @@
+body {
+    background: #e5e2e2;
+}
+.class1 {
+    background: #f18ca1;
+    width: 150px;
+    height: 20px;
+    font-family: VnArial;
+    color: white;
+    text-align: center;
+}
+#div1 {
+    text-align: center;
+}
+.span1 {
+    font-weight: bold;
+    color: black;
+}
+.span2 {
+    color: blue;
+}
+.span3 {
+    color: red;
+}
+.paragrap {
+    margin-top: 0px;
+    text-indent: 25px;
+    font-size: 18px;
+
+}
+#divParagrap {
+    display: none;
+}
+#divParagrap1 {
+    display: none;
+}
+#divParagrap2 {
+    display: none;
+}
+#divParagrap3 {
+    display: none;
+}
+#divParagrap4 {
+    display: none;
+}
+img {
+    border: 5px groove;
+    border-radius: 10px;
+    float: left;
+}
+.tieude {
+    color: red;
+    font-family: Tahoma;
+}
+.vanheo {
+    text-align: center;
+    text-indent: 25px;
+    font-size: 18px;
+}

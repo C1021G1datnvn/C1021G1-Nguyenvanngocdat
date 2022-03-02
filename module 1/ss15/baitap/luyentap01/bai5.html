@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Các chòm sao</title>
+</head>
+<body>
+<script>
+    function ngoisao(sao) {
+        let chomSao1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let chomSao2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        for (let i = 0; i < sao.length; i++) {
+            if (sao === chomSao1[i]) {
+                return chomSao2[i];
+            }
+        }
+        return  " ";
+    }
+    let nhapSao = prompt("Nhập ngôi sao muốn tìm: ");
+    star = ngoisao(nhapSao);
+    if (nhapSao === " ") {
+        alert("Không tìm thấy ngôi sao này.");
+    }else {
+        alert("Ngôi sao này có tên là:" + star);
+    }
+</script>
+</body>
+</html>

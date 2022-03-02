@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vẽ hình tam giác</title>
+</head>
+<body>
+<script>
+    //hình tam giác vuông
+    // let x = parseInt(prompt("Nhập độ dài của Tam giác: "));
+    // for (let i = 1; i <= x; i++) {
+    //     for (let j = x; j >= 1; j--) {
+    //         if (j > i) {
+    //             document.write("&ensp;");
+    //         } else {
+    //             document.write("*");
+    //         }
+    //     }
+    //     document.write("</br>");
+    // }
+    
+    
+    // hình tam giác vuông rỗng
+    // let x = parseInt(prompt("Nhập độ dài của Tam giác: "));
+    // for (let i = 1; i <= x; i++) {
+    //     for (let j = 1; j <= x ; j++) {
+    //         if (j === i || j === 1 || i === x ) {
+    //             document.write("*");
+    //         }else {
+    //             document.write("&nbsp;&nbsp;");
+    //         }
+    //     }
+    //     document.write("<br>")
+    // }
+    
+    
+    //Vẽ hình tam giác cân.
+    // let h = parseInt(prompt("Nhập độ cao của Tam giác: "));
+    // for (let i = 1; i <= h; i++) {
+    //     for(let j = 1; j <= 2*h-1; j++) {
+    //         if ((j <= (h + i - 1)) && (j >= (h - i + 1))) {
+    //             document.write("*");
+    //         }else {
+    //             document.write("&nbsp; ")
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+    
+    
+    //vẽ tam giác cân đặc.
+    let n = parseInt(prompt('nhập giá trị'))
+    for (let i=1;i<=n;i++){
+        for (let k=n; k > i ;k--){
+            document.write("&nbsp;&nbsp;")
+        }
+        for (let j=1;j<= i * 2 - 1;j++) {
+            if (i == 1 || i == n || j == 1|| j == (i * 2 - 1)) {
+                document.write("*")
+            }else
+                document.write("&nbsp;&nbsp;")
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>

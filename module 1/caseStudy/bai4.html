@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng và lặp</title>
+</head>
+<body>
+<h1>MENUU</h1>
+<p>Danh sách các loại thức uống: <br>
+        1. Cà Phê.<br>
+        2. Cam Vắt.<br>
+        3. Nước ép Cà Rốt.<br>
+        4. Nước ép Cà Chua.<br>
+        5. Nước lọc.<br>
+        6. Nước Dừa.<br>
+</p>
+<script>
+    //bai1
+    // function prefixSum(arr) {
+    //     let x = parseInt(prompt("Nhập số lượng phần tử của mảng: "));
+    //     let array = [];
+    //     let sum = 0;
+    //     let arrnew =[];
+    //     for (let i = 0; i < x; i++) {
+    //         let value = parseInt(prompt("Nhập giá trị các phần tử:" + i));
+    //         array[i] = value;
+    //     }
+    //     for (let i = 0; i < array.length; i++) {
+    //         sum = sum + array[i];
+    //         arrnew.push(sum)
+    //     }
+    //     alert(arrnew);
+    // }
+    // prefixSum();
+    
+    
+    // bai2
+    // let array1 = [2, 3, 5, 6, 7];
+    // let array2 = [1, 3, 5, 7, 8, 9];
+    // let arrNew = [];
+    //
+    //
+    // for (let i = 0; i <= array2.length; i++) {
+    //     let check = true;
+    //     for (let j = 0; j < array1.length; j++) {
+    //         console.log(array2[i]);
+    //         if (array2[i] === array1[j]) {
+    //             check = false;
+    //             break;
+    //         }
+    //     }
+    //     if (check) {
+    //         arrNew.push(array2[i]);
+    //     }
+    // }
+    // document.write(arrNew);
+
+
+    //bai3
+    // let tuSo = [5,2,5,4,5];
+    // let mauSo = [6,3,4,3,2];
+    // let index = 0;
+    // for (let i = 1;i < tuSo.length;i++){
+    //     if (tuSo[index] * mauSo[i] < tuSo[i] * mauSo[index]){
+    //         index = i;
+    //     }
+    // }
+    // alert("Ở vị trí " + tuSo[index] + " / " + mauSo[index] + " có chỉ số bằng: " + index);
+
+    
+    //bai4
+    // let number = [0,1,2,3,4,5,6,7,8,9];
+    // let numberString = ["Không","Một","Hai","Ba","Bốn","Năm","Sáu","Bảy","Tám","Chín"];
+    // let num = prompt("Nhập số vào");
+    // let numStr = num.split("");
+    // let inRa = [];
+    // for (let i = 0; i < number.length;i++){
+    //     for (let j = 0;j < numStr.length;j++){
+    //         if (numStr[j] == number[i]){
+    //             inRa.push(numberString[i]);
+    //         }
+    //     }
+    //
+    // }
+    // alert(inRa.join(" "));
+    
+    
+    //bai5
+    do {
+        let number = parseInt(prompt("Nhập vào số tương ướng với vị trí thức uống mà bạn muốn: "));
+            switch (number) {
+                case 1:
+                    alert("Thức uống mà bạn muốn là Cà Phê ? Giá của 1 ly Cà phê là 25k!");
+                    let value1 = parseInt(prompt("Số lượng mà bạn muốn: "));
+                    let tongTien1 = value1 * 25;
+                    alert("Số tiền mà bạn cần trả là: " + tongTien1);
+                    break;
+                case 2:
+                    alert("Thức uống mà bạn muốn là Cam Vắt ? Giá của 1 ly Cam Vắt là 30k");
+                    let value2 = parseInt(prompt("Số lượng mà bạn muốn: "));
+                    let tongTien2 = value2 * 30;
+                    alert("Số tiền mà bạn cần trả là: " + tongTien2);
+                    break;
+                case 3:
+                    alert("Thức uống mà bạn muốn là Nước ép cà rốt ? Giá của 1 ly Nước ép cà rốt là 30k");
+                    let value3 = parseInt(prompt("Số lượng mà bạn muốn: "));
+                    let tongTien3 = value3 * 30;
+                    alert("Số tiền mà bạn cần trả là: " + tongTien3);
+                    break;
+                case 4:
+                    alert("Thức uống mà bạn muốn là Nước ép cà chua ? Giá của 1 ly Nước ép cà chua là 30k");
+                    let value4 = parseInt(prompt("Số lượng mà bạn muốn: "));
+                    let tongTien4 = value4 * 30;
+                    alert("Số tiền mà bạn cần trả là: " + tongTien4);
+                    break;
+                case 5:
+                    alert("Thức uống mà bạn muốn là Nước lọc? Giá của 1 ly Nước Lọc là 315k");
+                    let value5 = parseInt(prompt("Số lượng mà bạn muốn: "));
+                    let tongTien5 = value5 * 15;
+                    alert("Số tiền mà bạn cần trả là: " + tongTien5);
+                    break;
+                case 6:
+                    alert("Thức uống mà bạn muốn là Nước Dừa ? Giá của 1 ly Nước Dừa là 25k");
+                    let value6 = parseInt(prompt("Số lượng mà bạn muốn: "));
+                    let tongTien6 = value6 * 25;
+                    alert("Số tiền mà bạn cần trả là: " + tongTien6);
+                    break;
+                case 7:
+                    alert("Cám ơn quý khách. See you again.")
+                    break;
+                default:
+                    alert("Xin quý khách gọi lại món.");
+                    break;
+            }
+    }while (number !== 7)
+    
+</script>
+</body>
+</html>

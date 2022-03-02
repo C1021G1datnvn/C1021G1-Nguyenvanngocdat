@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<form>
+    <input type="text" id="engLish" placeholder="Nhập từ cần tìm">
+    <button id="timKiem" onclick="timKiem()">Tìm Kiếm</button>
+    <div id="result"></div>
+</form>
+<script>
+    let nhapEl = document.getElementById("engLish")
+    let engLlish = ["football", "basketball", "valleyball"];
+    let vietNam = ["Bóng đá", "bóng rổ", "bóng bàn"];
+    let check = false;
+ function timKiem() {
+    for (i = 0; i < engLlish.length; i++) {
+        if (engLlish[i] == nhapEl.value) {
+            check = true;
+            document.getElementById("result").innerHTML = vietNam[i];
+            break;
+        }else {
+            check = false;
+        }
+            }
+    if (!check) {
+        alert("kh có dữ liệu xuất ra.");
+    }
+ }
+</script>
+</body>
+</html>

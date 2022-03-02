@@ -1,0 +1,6 @@
+Mô tả lại quá trình git clone
+ Mở file rồi git bash here sau đó cd tới thư mục mt new project 
+ khi cd tới được my new project thì thực hiện git clone 
+ 
+ 
+Ý nghĩa của câu lệnh Git clone là: clone một repository đã tồn tại ở  github về máy tính của bản thân để sử dụng 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculture Nang Cao</title>
+</head>
+<style>
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed;
+        width: 300px;
+        text-align: center;
+        background-color: #e3dbdb;
+    }
+    .black{
+        background-color: #aca8a8;
+    }
+</style>
+<body>
+<table border="1">
+    <tr>
+        <td id="ketQua" colspan="7"><input type="text" name="inp" value="" style="text-align: right; width: 283px"></td>
+    </tr>
+    <tr>
+        <td><button id="rad" class="black" type="button" name="button" value="rad" style="width: 35px" onclick="valueRad()">Rad</button></td>
+        <td><button id="ab" type="button" name="button" value="" style="width: 35px">&#8942;&#8942;&#8942;&#8942;&#8942;&#8942;&#8942;</button></td>
+        <td><button id="giaithua" class="black" type="button" name="button" value="x!" style="width: 35px" onclick="valueGiaiThua">x!</button></td>
+        <td><button id="ngoactrai" class="black" type="button" name="button" value="(" style="width: 35px" onclick="valueNgoacTr">(</button></td>
+        <td><button id="ngoacphai" class="black" type="button" name="button" value=")" style="width: 35px" onclick="valueNgoacPh">)</button></td>
+        <td><button id="phantram" class="black" type="button" name="button" value="%" style="width: 35px" onclick="valuePhanTram">%</button></td>
+        <td><button id="reset" class="black" type="button" name="button" value="reset" style="width: 35px" onclick="valueReset">AC</button></td>
+    </tr>
+    <tr>
+        <td><button id="inv" class="black" type="button" name="button" value="inv" style="width: 35px" onclick="valueInv">Inv</button></td>
+        <td><button id="sin" class="black" type="button" name="button" value="sin" style="width: 35px" onclick="valueSin">Sin</button></td>
+        <td><button id="ln" class="black" type="button" name="button" value="ln" style="width: 35px" onclick="valueLn">Ln</button></td>
+        <td><button id="seven" type="button" name="button" value="sevenn" style="width: 35px" onclick="valueSeven">7</button></td>
+        <td><button id="eight" type="button" name="button" value="eightt" style="width: 35px" onclick="valueEight">8</button></td>
+        <td><button id="nine" type="button" name="button" value="ninee" style="width: 35px" onclick="valueNine">9</button></td>
+        <td><button id="bc" class="black" type="button" name="button" value="&divide;" style="width: 35px">&divide;</button></td>
+    </tr>
+    <tr>
+        <td><button id="cd" class="black" type="button" name="button" value="" style="width: 35px">&#8374;</button></td>
+        <td><button id="cos" class="black" type="button" name="button" value="Cos" style="width: 35px" onclick="valueCos">Cos</button></td>
+        <td><button id="log" class="black" type="button" name="button" value="Log" style="width: 35px" onclick="valueLog">Log</button></td>
+        <td><button id="four" type="button" name="button" value="fourr" style="width: 35px" onclick="valueFour">4</button></td>
+        <td><button id="five" type="button" name="button" value="fivee" style="width: 35px" onclick="valueFive">5</button></td>
+        <td><button id="six" type="button" name="button" value="sixx" style="width: 35px" onclick="ValueSix">6</button></td>
+        <td><button id="de" class="black" type="button" name="button" value="" style="width: 35px">&times;</button></td>
+    </tr>
+    <tr>
+        <td><button id="epxilong" class="black" type="button" name="button" value="e" style="width: 35px" onclick="valueE">e</button></td>
+        <td><button id="tan" class="black" type="button" name="button" value="tan" style="width: 35px" onclick="valueTan">tan</button></td>
+        <td><button id="ef" class="black" type="button" name="button" value="" style="width: 35px">&radic;</button></td>
+        <td><button id="one" type="button" name="button" value="onee" style="width: 35px" onclick="valueOne()">1</button></td>
+        <td><button id="two" type="button" name="button" value="twoo" style="width: 35px" onclick="valueTwo()">2</button></td>
+        <td><button id="three" type="button" name="button" value="threee" style="width: 35px" onclick="valueThree()">3</button></td>
+        <td><button id="fg" class="black" type="button" name="button" value="" style="width: 35px">&minus;</button></td>
+    </tr>
+    <tr>
+        <td><button id="ans" class="black" type="button" name="button" value="ans" style="width: 35px" onclick="valueAns">Ans</button></td>
+        <td><button id="exp" class="black" type="button" name="button" value="exp" style="width: 35px" onclick="valueExp">EXP</button></td>
+        <td><button id="xmuy" class="black" type="button" name="button" value="x<sup>y" style="width: 35px" onclick="valueXmuY">X<sup>y</sup></button></td>
+        <td><button id="zero" type="button" name="button" value="zeroo" style="width: 35px" onclick="valueZero">0</button></td>
+        <td><button id="fg" type="button" name="button" value="." style="width: 35px" onclick="daucham">.</button></td>
+        <td><button id="gh"  type="button" name="button" value="" style="width: 35px; background-color: blue; color: white">&#61;</button></td>
+        <td><button id="ha" class="black" type="button" name="button" value="" style="width: 35px">&#43;</button></td>
+    </tr>
+</table>
+<script>
+    function valueOne() {
+        let one = document.getElementById("one")
+        document.getElementById("ketQua").value += one
+    }
+</script>
+</body>
+</html>

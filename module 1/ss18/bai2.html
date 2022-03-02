@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cặp Số thân thiết</title>
+</head>
+<body>
+<script>
+    let sum1 = 0;
+    let sum2 = 0;
+    let number1 = parseInt(prompt("Nhập số nguyên thứ nhất: "));
+    let number2 = parseInt(prompt("Nhập số nguyên thứ hai: "));
+    for (let i = 1; i < number1; i++) {
+        if (number1 % i === 0) {
+            sum1 = sum1 + i;
+            // console.log('sum1: ', sum1);
+        }
+    }
+    if (sum1 === number2) {
+        for (let i = 1; i < number2; i++) {
+            if (number2 % i === 0) {
+                sum2 = sum2 + i;
+                // console.log("sum2", sum2);
+            }
+        }
+    }
+    if (sum1 === number2 && sum2 === number1) {
+        alert("True");
+    }else {
+        alert("False");
+    }
+</script>
+</body>
+</html>

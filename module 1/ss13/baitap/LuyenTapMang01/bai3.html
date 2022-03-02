@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng và trung bình của các mảng</title>
+</head>
+<body>
+<script>
+    let x = parseInt(prompt("Nhập vào số lượng mảng: "));
+    let array = new Array (x);
+    let sum = 0;
+    let avg = 0;
+    for (let i = 0; i < x; i++) {
+        let number = parseInt(prompt("Nhập giá trị mảng: " + i));
+        array[i] = number;
+    }
+    array.sort(function (a,b) {
+        return b-a;
+    });
+    alert("Số lớn nhất của dãy là: " + array[0]);
+    for (i = 0; i < x; i++) {
+        sum = array[i] + sum;
+        avg = sum / array.length;
+    }
+    document.write("Giá trị trung bình của dãy số là: " + avg);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cước điện thoại</title>
+</head>
+<body>
+ <!--phí bắt buộc 25k
+ 600VND cho 50p đầu tiên
+ 400VND cho 150p tiếp
+ 200VND cho 200p đầu tiên-->
+<script>
+let soPhut = parseFloat(prompt("nhập số phút đã gọi"));
+if (soPhut <= 50) {
+    alert("Số tiền 50p gọi đầu tiên là:" + (600000 * 50) + ".VND");
+} else if (soPhut <= 150) {
+    alert("Số tiền 150p gọi tiếp theo là:" + (600 * 50)+(400 * 50) + ".VND");
+} else alert("Số tiền 200p gọi đầu tiên là:" + (600 * 50)+(400 * 50)+(200 * 50) + ".VND");
+</script>
+</body>
+</html>

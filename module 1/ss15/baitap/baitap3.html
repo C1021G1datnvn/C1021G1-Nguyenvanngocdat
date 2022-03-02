@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra đối xứng</title>
+</head>
+<body>
+<script>
+    function kiemTra(x) {
+        let check;
+        for (let i = 0; i < x.length/2; i++) {
+            if (x[i] === x[x.length - i - 1]) {
+                check = true;
+            }else {
+                check = false;
+                break;
+            }
+        }
+        return check;
+    }
+    let n = prompt("Nhập vào ký tự mà bạn muốn nhập:");
+    let nhapKyTu = n.split("");
+    result = kiemTra(nhapKyTu);
+    if (result) {
+        alert("Chuỗi được nhập vào là chuỗi đối xứng.");
+    }else {
+        alert("Chuỗi được nhập vào không phải là chuỗi đối xứng.");
+    }
+</script>
+</body>
+</html>

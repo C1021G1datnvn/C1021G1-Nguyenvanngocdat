@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+<script>
+    //bai1
+    // let str="ngUYEn VaN nGOC daT";
+    // // str.replace(/\s+/g, ' ')
+    // let str1=str.toLowerCase();
+    // str1.split("");
+    // // console.log(str1);
+    // let str2=[];
+    // str2[0]=str1[0].toUpperCase();
+    // // console.log(str2);
+    // for(let i=1;i<str1.length;i++){
+    //     str2.push(str1[i]);
+    // }
+    //
+    // for(let j=1;j<str2.length;j++){
+    //     if(str2[j]===" "){
+    //         str2[j+1]=str2[j+1].toUpperCase();
+    //     }
+    // }
+    // document.write(str2.join(""));
+    
+    
+    //bai2
+    let str = prompt("nhập chuỗi ký tự");
+    strArr = str.split("");
+    let strNew = [];
+    let count = 0;
+    for (let i = 0; i < strArr.length; i++) {
+        let check = false;
+        for (let j = 0; j <= strNew.length; j++) {
+            if (strArr[i] === strNew[j]) {
+                check = true;
+                break;
+            }
+        }
+        if (check === false) {
+            count++;
+            strNew.push(strArr[i]);
+        }
+    }
+    alert("Số ký tự khác nhau là: " + count);
+   
+</script>
+</body>
+</html>
