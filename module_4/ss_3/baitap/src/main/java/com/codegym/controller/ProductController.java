@@ -67,7 +67,7 @@ public class ProductController {
     public String delete(Product product, RedirectAttributes redirectAttributes) {
         productService.remove(product.getId());
         redirectAttributes.addFlashAttribute("success", "Remove product successfully");
-        return "redirect:product";
+        return "redirect:/product";
     }
 
 }

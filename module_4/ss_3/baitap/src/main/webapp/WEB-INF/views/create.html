@@ -2,26 +2,29 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="/layout :: head"></head>
 <body>
-<h3>Add Product</h3>
+<h3>Add Customer</h3>
 <p>
-    <a th:href="@{/product}">Back to list Product</a>
+    <a th:href="@{/product}">
+        Back to customer list
+    </a>
 </p>
 <div id="form">
-    <form action="@{/product/save}" method="post" th:object="${product}" novalidate="novalidate">
-         <input type="hidden" th:field="*{id}"/>
+    <form th:action="@{/product/save}" th:object="${product}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
         <div>
             <label>Name</label>
-            <input type="text" th:field="*{name}">
+            <input type="text" th:field="*{name}"/>
         </div>
         <div>
             <label>Price</label>
-            <input type="text" th:field="*{price}">
+            <input type="text" th:field="*{price}"/>
         </div>
         <div>
             <label>Producer</label>
-            <input type="text" th:field="*{producer}">
+            <input type="text" th:field="*{producer}"/>
         </div>
-        <input type="submit" value="Save">
+        <input type="submit" value="Save"/>
     </form>
 </div>
 <footer th:replace="/layout :: footer"></footer>
