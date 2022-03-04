@@ -4,6 +4,7 @@ package com.codegym.controller;
 import com.codegym.model.Product;
 import com.codegym.service.IProductService;
 import com.codegym.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +18,9 @@ import java.util.List;
 @Controller
 @RequestMapping("/product")
 public class ProductController {
-    private final IProductService productService = new ProductService();
+
+    @Autowired
+    private IProductService productService;
 
     @GetMapping("")
     public String index(Model model) {
@@ -33,9 +36,10 @@ public class ProductController {
     }
 
     @PostMapping("/save")
-    public String save(Product product) {
+    public String save(Product product, RedirectAttributes redirectAttributes) {
         product.setId((int) (Math.random() * 10000));
         productService.save(product);
+        redirectAttributes.addFlashAttribute("message", "save product successfully");
         return "redirect:/product";
     }
 
@@ -46,8 +50,9 @@ public class ProductController {
     }
 
     @PostMapping("/update")
-    public String update(Product product) {
+    public String update(Product product, RedirectAttributes redirectAttributes) {
         productService.update(product.getId(), product);
+        redirectAttributes.addFlashAttribute("message", "Update product successfully");
         return "redirect:/product";
     }
 
@@ -66,7 +71,7 @@ public class ProductController {
     @PostMapping("/delete")
     public String delete(Product product, RedirectAttributes redirectAttributes) {
         productService.remove(product.getId());
-        redirectAttributes.addFlashAttribute("success", "Remove product successfully");
+        redirectAttributes.addFlashAttribute("message", "Remove product successfully");
         return "redirect:/product";
     }
 
