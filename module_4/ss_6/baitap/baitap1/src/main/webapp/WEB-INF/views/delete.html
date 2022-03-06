@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Blog</title>
+</head>
+<body>
+<h1>Delete Blog</h1>
+<h3>Are you sure</h3>
+<p>
+    <a href="/blog">Back to list Blog</a>
+</p>
+<form th:action="@{/delete}" method="post" th:object="${blog}">
+    <input th:type="hidden" name="id" th:filed="*{id}">
+<table>
+    <tr>
+        <td>Header</td>
+        <td th:text="${blog.header}"></td>
+    </tr>
+    <tr>
+        <td>Body</td>
+        <td th:text="${blog.body}"></td>
+    </tr>
+    <tr>
+        <td>Footer</td>
+        <td th:text="${blog.footer}"></td>
+    </tr>
+    <tr>
+        <td>
+            <input th:type="submit" value="DeleteBlog">
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
