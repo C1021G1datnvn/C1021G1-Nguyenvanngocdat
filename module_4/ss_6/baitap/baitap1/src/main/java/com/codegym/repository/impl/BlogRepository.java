@@ -30,7 +30,8 @@ public class BlogRepository implements IBlogRepository {
 
     @Override
     public void delete(Blog blog) {
-        entityManager.remove(blog);
+        Blog blog1 = selectById(blog.getId());
+        entityManager.remove(blog1);
     }
 
     @Override

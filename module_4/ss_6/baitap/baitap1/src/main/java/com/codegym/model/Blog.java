@@ -13,6 +13,7 @@ public class Blog {
     private String body;
     private String footer;
 
+
     public Blog() {
 
     }

@@ -5,11 +5,13 @@ import com.codegym.model.Blog;
 import com.codegym.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 
 @Controller
@@ -74,11 +76,10 @@ public class BlogController {
         }
     }
     @PostMapping("/delete")
-    public ModelAndView delete(Blog blog) {
+    public String delete(Blog blog, RedirectAttributes redirectAttributes) {
         blogService.delete(blog);
-        ModelAndView modelAndView = new ModelAndView("delete");
-        modelAndView.addObject("blog", blog);
-        modelAndView.addObject("message", "delete blog successfully");
-        return modelAndView;
+        redirectAttributes.addFlashAttribute("blogList", blogService.selectAll());
+        redirectAttributes.addFlashAttribute("message", "delete blog successfully");
+        return "redirect:/blog";
     }
 }

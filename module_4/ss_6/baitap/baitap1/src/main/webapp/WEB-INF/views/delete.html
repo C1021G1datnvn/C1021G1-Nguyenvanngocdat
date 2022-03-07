@@ -11,7 +11,7 @@
     <a href="/blog">Back to list Blog</a>
 </p>
 <form th:action="@{/delete}" method="post" th:object="${blog}">
-    <input th:type="hidden" name="id" th:filed="*{id}">
+    <input type="hidden" name="id" th:filed="*{id}" th:value="${blog.id}">
 <table>
     <tr>
         <td>Header</td>
@@ -27,7 +27,7 @@
     </tr>
     <tr>
         <td>
-            <input th:type="submit" value="DeleteBlog">
+            <input type="submit" value="DeleteBlog">
         </td>
     </tr>
 </table>
