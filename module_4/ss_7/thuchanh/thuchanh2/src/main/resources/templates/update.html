@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Customer</title>
+</head>
+<body>
+<h1>Edit Customer</h1>
+<p>
+    <a href="/customer">Back To list Customer</a>
+</p>
+<form th:action="@{/edit}" method="post" th:object="${customer}">
+    <input type="hidden" name="id" th:value="${customer.id}">
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td>
+                <input th:type="text" th:field="*{firstName}">
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>
+                <input th:type="text" th:field="*{lastName}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input th:type="submit" value="EditCustomer">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List Customer</title>
+</head>
+<body>
+<h1>List Customer</h1>
+<div>
+    <div th:if="${message}">
+        <span th:text="${message}"></span>
+    </div>
+</div>
+<p>
+    <a href="/create-customer">Create Customer</a>
+</p>
+<form th:action="@{/search}" method="post" th:object="${customerList}">
+    <input th:type="text" placeholder="Input customer">
+    <input th:type="submit" value="SearchCustomer">
+</form>
+<table border="1">
+<tr>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    <th>Province</th>
+</tr>
+    <tr th:each="customer : ${customerList}">
+        <td th:text="${customer.id}"></td>
+        <td th:text="${customer.firstName}"></td>
+        <td th:text="${customer.lastName}"></td>
+        <td th:if="${customer.provinces}" th:text="${customer.provinces.name}"></td>
+        <td>
+            <a th:href="@{/edit/__${customer.id}__}">Edit</a>
+        </td>
+        <td>
+            <a th:href="@{/delete/__${customer.id}__}">Delete</a>
+        </td>
+    </tr>
+</table>
+<div>
+    <a th:href="@{'/customer'(page=${customerList.number - 1})}" th:if="${customerList.hasPrevious()}">Previous</a>
+    <span th:text="${customerList.number + 1}"></span>/<span th:text="${customerList.totalPages}"></span>
+    <a th:href="@{'/customer'(page=${customerList.number + 1})}" th:if="${customerList.hasNext()}">Next</a>
+</div>
+</body>
+</html>
