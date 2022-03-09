@@ -14,8 +14,8 @@
 <p>
     <a href="/create-customer">Create Customer</a>
 </p>
-<form th:action="@{/search}" method="post" th:object="${customerList}">
-    <input th:type="text" placeholder="Input customer">
+<form th:action="@{/search}" method="post">
+    <input th:type="text" name="name" placeholder="Input Customer">
     <input th:type="submit" value="SearchCustomer">
 </form>
 <table border="1">
@@ -40,7 +40,7 @@
         </td>
     </tr>
 </table>
-<div>
+<div th:if="${value == null}">
     <a th:href="@{'/customer'(page=${customerList.number - 1})}" th:if="${customerList.hasPrevious()}">Previous</a>
     <span th:text="${customerList.number + 1}"></span>/<span th:text="${customerList.totalPages}"></span>
     <a th:href="@{'/customer'(page=${customerList.number + 1})}" th:if="${customerList.hasNext()}">Next</a>

@@ -1,6 +1,7 @@
 package com.example.thuchanh2.service;
 
 
+import com.example.thuchanh2.model.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -15,5 +16,5 @@ public interface ICustomerService<T> {
     void save(T t);
 
     void remove(Long id);
-    void search(String name);
+    List<Customer> search(String name);
 }
