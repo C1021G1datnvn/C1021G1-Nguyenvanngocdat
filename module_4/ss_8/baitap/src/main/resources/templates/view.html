@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>View User</h3>
+<p>
+  <a th:href="@{/user}">
+    Back to user list
+  </a>
+</p>
+<div id="detail">
+  <div class="cusdetail">
+    <label>First Name:</label>
+    <label th:text="${user.firstName}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Last Name:</label>
+    <label th:text="${user.lastName}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Phone Number:</label>
+    <label th:text="${user.phoneNumber}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Age:</label>
+    <label th:text="${user.age}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Email:</label>
+    <label th:text="${user.email}"></label>
+  </div>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
