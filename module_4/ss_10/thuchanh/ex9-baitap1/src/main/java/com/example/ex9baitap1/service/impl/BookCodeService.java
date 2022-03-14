@@ -1,0 +1,19 @@
+package com.example.ex9baitap1.service.impl;
+
+
+import com.example.ex9baitap1.repository.ICodeBookRepository;
+import com.example.ex9baitap1.service.IBookCodeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+@Service
+public class BookCodeService implements IBookCodeService {
+    @Autowired
+    private ICodeBookRepository codeBookRepository;
+
+    @Override
+    public Iterable findAll() {
+        return codeBookRepository.findAll();
+    }
+}
