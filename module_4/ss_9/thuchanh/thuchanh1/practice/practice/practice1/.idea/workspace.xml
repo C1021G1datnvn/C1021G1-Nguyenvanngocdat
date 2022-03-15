@@ -61,16 +61,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Practice1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="practice1.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.practice1.Practice1Application" />
@@ -93,6 +83,7 @@
       <workItem from="1646983943514" duration="1228000" />
       <workItem from="1646987567019" duration="68000" />
       <workItem from="1647066941120" duration="756000" />
+      <workItem from="1647181412240" duration="178000" />
     </task>
     <servers />
   </component>

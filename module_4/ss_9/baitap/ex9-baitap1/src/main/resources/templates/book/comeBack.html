@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>give book back</h1>
+<h3>
+    <a href="/book">Back book list</a>
+</h3>
+<form th:action="@{/back-book}" method="post" >
+    <td>
+        Input codeBook
+        <input type="text" placeholder="input" name="input">
+    </td>
+    <td>
+        <input type="submit" value="BackBook">
+    </td>
+</form>
+</body>
+</html>
