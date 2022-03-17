@@ -1,13 +1,13 @@
-package com.example.baitap;
+package com.example.exercise;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BaitapApplication {
+public class ExerciseApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BaitapApplication.class, args);
+        SpringApplication.run(ExerciseApplication.class, args);
     }
 
 }

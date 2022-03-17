@@ -1,10 +1,10 @@
-package com.example.thuchanh1;
+package com.example.exercise;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Thuchanh1ApplicationTests {
+class ExerciseApplicationTests {
 
     @Test
     void contextLoads() {

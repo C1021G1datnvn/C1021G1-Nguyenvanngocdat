@@ -1,6 +1,4 @@
-package com.example.thuchanh1.model;
-
-
+package com.example.practice.model;
 
 public class User {
 
