@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="869cc4de-ddef-45fa-bd0d-2ef6c1e84435" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/Ex9Baitap1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/controller/BookCodeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/model/BookCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/repository/IBookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/repository/ICodeBookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/service/IBookCodeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/service/IBookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/service/impl/BookCodeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/java/com/example/ex9baitap1/service/impl/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/resources/templates/book/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/resources/templates/book/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/main/resources/templates/book/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_10/thuchanh/ex9-baitap1/src/test/java/com/example/ex9baitap1/Ex9Baitap1ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_7/baitap/src/main/java/com/codegym/baitap1/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss_7/baitap/src/main/java/com/codegym/baitap1/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_7/baitap/src/main/java/com/codegym/baitap1/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss_7/baitap/src/main/java/com/codegym/baitap1/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_8/baitap/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss_8/baitap/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="26SZZyHVXgVZJbhmWyHsk00jzxh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="869cc4de-ddef-45fa-bd0d-2ef6c1e84435" name="Changes" comment="" />
+      <created>1647419008983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647419008983</updated>
+      <workItem from="1647419010553" duration="42000" />
+    </task>
+    <servers />
+  </component>
+</project>
