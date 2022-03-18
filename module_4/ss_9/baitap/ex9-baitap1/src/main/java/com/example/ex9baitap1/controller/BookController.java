@@ -8,10 +8,7 @@ import com.example.ex9baitap1.service.IBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -62,7 +59,7 @@ public class BookController {
     }
 
     @GetMapping("/borrow-book/{id}")
-    public String borrowBook(@PathVariable Long id, Model model) {
+    public String borrowBook(@PathVariable Long id, Model model) throws Exception {
         Book book = bookService.findById(id);
         if (book.getCurrentQuantity() > 0) {
             book.setCurrentQuantity(book.getCurrentQuantity() - 1);
@@ -71,6 +68,8 @@ public class BookController {
             BookCode bookCode = new BookCode(codeBook, book);
             bookCodeService.save(bookCode);
             model.addAttribute("codeBook", codeBook);
+        }else {
+            throw new Exception();
         }
         return "book/borrow";
     }
@@ -93,5 +92,10 @@ public class BookController {
             }
         }
         return "redirect:/book";
+    }
+
+    @ExceptionHandler(Exception.class)
+    public void TodoException(Exception ex) {
+        System.out.println("Lỗi")   ;
     }
 }
