@@ -1,6 +1,7 @@
 package com.codegym.baitap1.controller;
 
 
+import com.codegym.baitap1.model.Blog;
 import com.codegym.baitap1.model.Category;
 import com.codegym.baitap1.service.ICategoryService;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -39,6 +40,38 @@ public class CategoryController {
         }
         return new ResponseEntity<>(categoryOptional.get(), HttpStatus.OK);
     }
+    @PostMapping("/createCategory")
+    public ResponseEntity<Category> createCategory(@RequestBody Category category){
+        categoryService.save(category);
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    @DeleteMapping("/deleteCategory/{id}")
+    public ResponseEntity<Category> deleteCategory(@PathVariable Long id) {
+        Optional<Category> optionalCategory = categoryService.findById(id);
+        if (!optionalCategory.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        categoryService.remove(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+    @PutMapping("editCategory/{id}")
+    public ResponseEntity<Blog> editCategory(@PathVariable Long id, @RequestBody Category category) {
+        Optional<Category> categoryOptional = categoryService.findById(id);
+        if (!categoryOptional.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        categoryOptional.get().setName(category.getName());
+        categoryOptional.get().setBlogs(category.getBlogs());
+        categoryService.save(categoryOptional.get());
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+
+
+
+
+
 
 
 

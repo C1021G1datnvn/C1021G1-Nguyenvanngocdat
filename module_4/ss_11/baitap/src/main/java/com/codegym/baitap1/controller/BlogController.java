@@ -42,6 +42,34 @@ public class BlogController {
         return new ResponseEntity<>(blog.get(),HttpStatus.OK);
     }
 
+    @PostMapping("/create")
+    public ResponseEntity<Blog> createBlog(@RequestBody Blog blog){
+        service.save(blog);
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Blog> deleteBlog(@PathVariable Long id) {
+        Optional<Blog> optionalBlog = service.findById(id);
+        if (!optionalBlog.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        service.remove(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+    @PutMapping("edit/{id}")
+    public ResponseEntity<Blog> editBlog(@PathVariable Long id, @RequestBody Blog blog) {
+        Optional<Blog> optionalBlog = service.findById(id);
+        if (!optionalBlog.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        optionalBlog.get().setHeader(blog.getHeader());
+        optionalBlog.get().setBody(blog.getBody());
+        optionalBlog.get().setFooter(blog.getFooter());
+        service.save(optionalBlog.get());
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 
 
 

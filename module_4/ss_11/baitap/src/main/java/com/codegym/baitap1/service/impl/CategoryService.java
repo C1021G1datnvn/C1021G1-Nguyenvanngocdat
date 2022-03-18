@@ -26,8 +26,8 @@ public class CategoryService implements ICategoryService<Category> {
     }
 
     @Override
-    public void remove(Category category) {
-        repository.delete(category);
+    public void remove(Long id) {
+        repository.deleteById(id);
     }
 
     @Override
