@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Edit Blog</h1>
+<p>
+    <a href="/blog">List Blog</a>
+</p>
+<th:block th:if="${message}">
+    <p th:text="${message}"></p>
+</th:block>
+<form th:action="@{/edit}" method="post" th:object="${blog}">
+    <input th:type="hidden" name="id" th:field="*{id}">
+    <table>
+        <tr>
+            <td>Header</td>
+            <td>
+                <input th:type="text" th:field="*{header}">
+            </td>
+        </tr>
+        <tr>
+            <td>Body</td>
+            <td>
+                <input th:type="text" th:field="*{body}">
+            </td>
+        </tr>
+        <tr>
+            <td>Footer</td>
+            <td>
+                <input th:type="text" th:field="*{footer}">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input th:type="submit" value="EditBlog">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
