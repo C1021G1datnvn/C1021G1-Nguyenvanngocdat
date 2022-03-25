@@ -3,7 +3,8 @@ package com.codegym.case_study_module4.model;
 import javax.persistence.*;
 
 @Entity
-public class Customer {
+public class
+    Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
@@ -16,7 +17,7 @@ public class Customer {
     private String address;
 
     @ManyToOne
-    @JoinColumn(name = "customertype_id" , referencedColumnName = "id")
+    @JoinColumn(name = "customertype_id", referencedColumnName = "id")
     private CustomerType customerTypes;
 
     public Customer() {

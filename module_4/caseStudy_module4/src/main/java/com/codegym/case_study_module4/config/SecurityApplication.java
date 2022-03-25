@@ -30,7 +30,7 @@ public class SecurityApplication extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .formLogin()
-//                .loginPage("/")
+                .loginPage("/login")
                 .defaultSuccessUrl("/").permitAll()
                 .and()
                 .authorizeRequests()

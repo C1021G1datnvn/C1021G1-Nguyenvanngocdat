@@ -17,8 +17,31 @@
         <span th:text="${message}"></span>
     </div>
 </div>
-<form action="searchCustomer" method="post">
-    <input type="text" name="search" placeholder="Search Customer">
+<!--<div class="container-fluid">-->
+<!--    <div class="row">-->
+<!--        <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--            <a class="navbar-brand" href="#">-->
+<!--                <img src="https://phuongviethcm.com/wp-content/uploads/2019/07/FURAMA.png" style="width:64px;">-->
+<!--            </a>-->
+<!--            <a class="navbar-brand" href="/">Furama Resort</a>-->
+<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"-->
+<!--                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="navbarNavDropdown">-->
+<!--                <div class="navbar-nav">-->
+<!--                    <a class="nav-item nav-link active" href="/customerList">Customer</a>-->
+<!--                    <a class="nav-item nav-link" href="/employeeList">Employee</a>-->
+<!--                    <a class="nav-item nav-link" href="/serviceList">Service</a>-->
+<!--                    <a class="nav-item nav-link" href="/contractList">Contract</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </nav>-->
+<!--    </div>-->
+<!--</div>-->
+
+<form action="/searchCustomer" method="get">
+    <input type="text" name="search" placeholder="Search Customer" style="min-width: 250px">
     <input type="submit" value="search Customer">
 </form>
 
@@ -29,9 +52,9 @@
         <th>Customer Name</th>
         <th>Customer Birthday</th>
         <th>Gender</th>
-        <th>Customer IdCard</th>
-        <th>Phone</th>
-        <th>Email</th>
+<!--        <th>Customer IdCard</th>-->
+<!--        <th>Phone</th>-->
+<!--        <th>Email</th>-->
         <th>Address</th>
         <th>Customer Type</th>
         <th>Edit</th>
@@ -43,9 +66,9 @@
     <tr th:each=" row : ${customerList} ">
         <td th:text="${row.getCustomerName()}"></td>
         <td th:text="${row.getCustomerBirthday()}"></td>
-        <td th:text="${row.getGender()}"></td>
-        <td th:text="${row.getCustomerIdCard()}"></td>
-        <td th:text="${row.getPhone()}"></td>
+<!--        <td th:text="${row.getGender()}"></td>-->
+<!--        <td th:text="${row.getCustomerIdCard()}"></td>-->
+<!--        <td th:text="${row.getPhone()}"></td>-->
         <td th:text="${row.getEmail()}"></td>
         <td th:text="${row.getAddress()}"></td>
         <td th:text="${row.customerTypes.customerTypeName}"></td>
@@ -55,7 +78,7 @@
             <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     th:onclick="'javascript:deleteCustomer(' + ${row.id} + ')'">Delete</button>
         </td>
-        <td><a class="btn btn-success" th:href="@{/customerView/{id}/__${row.id}__}">View</a></td>
+        <td><a class="btn btn-success" th:href="@{/viewCustomer/__${row.id}__}">View</a></td>
     </tr>
     </tbody>
 </table>

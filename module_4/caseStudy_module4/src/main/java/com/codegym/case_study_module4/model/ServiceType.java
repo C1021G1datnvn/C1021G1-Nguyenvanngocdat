@@ -14,7 +14,7 @@ public class ServiceType {
 
     @OneToMany(mappedBy = "serviceType")
     @JsonManagedReference
-    private Set<Service> services;
+    private Set<Service1> service1;
 
     public ServiceType() {
     }
@@ -35,11 +35,11 @@ public class ServiceType {
         this.serviceTypeName = serviceTypeName;
     }
 
-    public Set<Service> getServices() {
-        return services;
+    public Set<Service1> getService1() {
+        return service1;
     }
 
-    public void setServices(Set<Service> services) {
-        this.services = services;
+    public void setService1(Set<Service1> services) {
+        this.service1 = services;
     }
 }

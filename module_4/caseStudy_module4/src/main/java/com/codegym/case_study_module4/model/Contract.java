@@ -25,10 +25,28 @@ public class Contract {
 
     @ManyToOne
     @JoinColumn(name = "service_id",referencedColumnName = "id")
-    private Service service;
-    @OneToMany(mappedBy = "contract")
-    private Set<ContracDetail> contracDetails;
+    private Service1 service1;
 
+    @OneToMany(mappedBy = "contract")
+    private Set<ContractDetail> contractDetails;
+
+    @ManyToOne
+    @JoinColumn(name = "contract", referencedColumnName = "id")
+    private Service1 services1;
+
+    public Contract(Integer id, Date contractStartDate, Date contractEndDate, double contractDeposit,
+                    double totalMoney, Employee employee, Customer customer,
+                    Service1 service1, Set<ContractDetail> contractDetails) {
+        this.id = id;
+        this.contractStartDate = contractStartDate;
+        this.contractEndDate = contractEndDate;
+        this.contractDeposit = contractDeposit;
+        this.totalMoney = totalMoney;
+        this.employee = employee;
+        this.customer = customer;
+        this.service1 = service1;
+        this.contractDetails = contractDetails;
+    }
 
     public Contract() {
     }
@@ -89,19 +107,19 @@ public class Contract {
         this.customer = customer;
     }
 
-    public Service getService() {
-        return service;
+    public Service1 getService1() {
+        return service1;
     }
 
-    public void setService(Service service) {
-        this.service = service;
+    public void setService1(Service1 service1) {
+        this.service1 = service1;
     }
 
-    public Set<ContracDetail> getContracDetails() {
-        return contracDetails;
+    public Set<ContractDetail> getContractDetails() {
+        return contractDetails;
     }
 
-    public void setContracDetails(Set<ContracDetail> contracDetails) {
-        this.contracDetails = contracDetails;
+    public void setContractDetails(Set<ContractDetail> contractDetails) {
+        this.contractDetails = contractDetails;
     }
 }
