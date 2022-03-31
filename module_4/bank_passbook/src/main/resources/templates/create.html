@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>Thêm Bank BookPass</h3>
+<p>
+    <a th:href="@{/bank}">
+        Quay về trang danh sách
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/create}" th:object="${soTietKiem}"
+          method="post" novalidate="novalidate">
+        <!--        <input type="hidden" th:field="*{id}"/>-->
+        <div>
+            <label>Mã STK</label>
+            <input type="text" th:field="*{maSTK}"/>
+            <p th:if="${#fields.hasErrors('maSTK')}" th:errors="*{maSTK}">
+            </p>
+        </div>
+        <div>
+            <label>Mã Khách Hàng</label>
+            <input type="text" th:field="*{maKhachHang}"/>
+            <p th:if="${#fields.hasErrors('maKhachHang')}" th:errors="*{maKhachHang}">
+            </p>
+        </div>
+        <div>
+            <label>Thời Gian bắt đầu gửi</label>
+            <input type="date" th:field="*{timeGui}"/>
+            <p th:if="${#fields.hasErrors('timeGui')}" th:errors="*{timeGui}">
+            </p>
+        </div>
+        <div>
+            <label>Kỳ Hạn</label>
+            <input type="text" th:field="*{kyHan}"/>
+            <p th:if="${#fields.hasErrors('kyHan')}" th:errors="*{kyHan}">
+            </p>
+        </div>
+        <div>
+            <label>Số tiền gửi</label>
+            <input type="text" th:field="*{soTien}"/>
+            <p th:if="${#fields.hasErrors('soTien')}" th:errors="*{soTien}">
+            </p>
+        </div>
+        <div>
+            <label>Mã STK</label>
+            <select th:field="*{customer.id}">
+                <option th:each="p : ${customer}" th:value="${p.id}" th:text="${p.nameCustomer}"></option>
+            </select>
+        </div>
+        <input type="submit" value="Create"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

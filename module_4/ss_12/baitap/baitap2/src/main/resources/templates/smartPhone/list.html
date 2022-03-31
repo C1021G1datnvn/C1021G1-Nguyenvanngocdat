@@ -46,7 +46,7 @@
                 <button class="deleteSmartphone" th:value="${smartphone.id}">Delete</button>
             </td>
             <td>
-                <button class="editSmartphone" th:value="${smartphone.id}">Edit</button>
+                <button class="editSmartphone" th:value="${smartphone.id}" id="id-blog">Edit</button>
             </td>
         </tr>
     </th:block>
@@ -112,7 +112,9 @@
     // edit = ajax
     $(document).ready(function () {
         $('.editSmartphone').click(function (event) {
+
             let a = $(this);
+            console.log(a)
             let smartphoneId = a.attr("href");
             $('#id1').val(smartphoneId);
             let producer =  $('#producer1');
@@ -126,7 +128,7 @@
             inputForm.attr("display","block")
             $.ajax({
                 type: "PUT",
-                url: `/smartphones/${smartphoneId}`,
+                url: `/smartphones/`+smartphoneId,
                 success: successHandler
             });
             event.preventDefault();

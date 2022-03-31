@@ -97,15 +97,6 @@ public class CustomerController {
         return "redirect:/customerList";
     }
 
-//    @GetMapping("/customerDelete/{id}")
-//    public ModelAndView showDeleteCustomer(@PathVariable Integer id) {
-//        Customer customer = customerService.findById(id);
-//        ModelAndView modelAndView = new ModelAndView("/customer/deleteCustomer");
-//        modelAndView.addObject("customer", customer);
-//        modelAndView.addObject("customerType", customerTypeService.findAll());
-//        return modelAndView;
-//    }
-
 
 // cos 2 cachs để viết delete
 

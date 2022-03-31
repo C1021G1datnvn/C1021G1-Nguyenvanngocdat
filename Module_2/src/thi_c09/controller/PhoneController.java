@@ -10,9 +10,11 @@ public class PhoneController {
     static GPhoneService gPhoneService = new GPhoneService();
     static XPhoneService xPhoneService = new XPhoneService();
     private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         phoneManager();
     }
+
     public static void phoneManager() {
         boolean check = false;
         int number;

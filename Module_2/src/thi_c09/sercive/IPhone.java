@@ -5,5 +5,4 @@ public interface IPhone {
     public void removePhone();
     public void displayPhone();
     public void searchPhone();
-
 }

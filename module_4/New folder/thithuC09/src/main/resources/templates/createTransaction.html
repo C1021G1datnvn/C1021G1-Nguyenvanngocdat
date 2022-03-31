@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="/layout :: head">
+
+    </th:block>
+</head>
+<body>
+<h3 style="text-align: center">Thêm mới Giao dịch</h3>
+<h2 th:text="${message}"></h2>
+<center>
+    <div id="form">
+        <form th:action="@{createTransaction}" th:object="${transactionDto}"
+              method="post" novalidate="novalidate">
+            <div>
+                <span>
+                    <label>Mã giao dịch(<a style="color: red">*</a>)(VD = MGD-XXXX): </label>
+                    <input type="text" th:field="*{codeTransaction}" style="text-align: center"/>
+                    <p th:if="${#fields.hasErrors('codeTransaction')}" th:errors="*{codeTransaction}"
+                       style="color: red"></p>
+                </span>
+            </div>
+            <div>
+                <label>Tên khách hàng(<a style="color: red">*</a>): </label>
+                <select th:field="*{customer.idCustomer}">
+                    <option value="" style="text-align: center">Chọn Khách hàng</option>
+                    <option th:each="item: ${customerList}"
+                            th:value="${item.idCustomer}" th:text="${item.nameCustomer}"
+                            style="text-align: center"></option>
+                </select>
+                <p th:if="${#fields.hasErrors('customer.nameCustomer')}" th:errors="*{customer.nameCustomer}"
+                   style="color: red"></p>
+            </div>
+            <div>
+                <label>Ngày giao dịch(<a style="color: red">*</a>):</label>
+                <input type="date" th:field="*{dateTransaction}" style="text-align: center"/>
+                <p th:if="${#fields.hasErrors('dateTransaction')}" th:errors="*{dateTransaction}"
+                   style="color: red"></p>
+            </div>
+            <div>
+                <label>Loại giao dịch(<a style="color: red">*</a>) :</label><br>
+                <input type="radio" th:field="*{typeOfService}" th:value="1"/>Đất
+                <!--                <label th:text="Đất" />-->
+                <input type="radio" th:field="*{typeOfService}" th:value="2"/>Nhà Đất
+                <!--                <label th:text="Nhà Đất" />-->
+                <!--                <p th:if="${#fields.hasErrors('typeOfService')}" th:errors="*{typeOfService}" style="color: red"></p>-->
+            </div>
+            <div>
+                <label>Đơn giá(VND/m2)(<a style="color: red">*</a>): </label>
+                <input type="text" th:field="*{unitPrice}" style="text-align: center"/>
+                <p th:if="${#fields.hasErrors('unitPrice')}" th:errors="*{unitPrice}" style="color: red"></p>
+            </div>
+            <div>
+                <label>Diên tích(m2)(<a style="color: red">*</a>): </label>
+                <input type="text" th:field="*{acreage}" style="text-align: center"/>
+                <p th:if="${#fields.hasErrors('acreage')}" th:errors="*{acreage}" style="color: red"></p>
+            </div>
+            <div>
+                <input type="submit" value="Save"/>
+                <a id="back" th:href="@{/transaction}" style="text-decoration: none">Back to list</a>
+            </div>
+        </form>
+    </div>
+</center>
+</body>
+
+<footer th:replace="/layout :: footer"></footer>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>View Sổ Tiết Kiệm</h3>
+<p>
+  <a th:href="@{/bank}">
+   Quay lại trang
+  </a>
+</p>
+<div id="detail">
+  <div class="cusdetail">
+    <label>Mã STK:</label>
+    <label th:text="${soTietKiem.maSTK}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Mã Khách Hàng:</label>
+    <label th:text="${soTietKiem.maKhachHang}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Thời Gian gửi:</label>
+    <label th:text="${soTietKiem.timeGui}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Kỳ Hạn:</label>
+    <label th:text="${soTietKiem.kyHan}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Số Tiền:</label>
+    <label th:text="${soTietKiem.soTien}"></label>
+  </div>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

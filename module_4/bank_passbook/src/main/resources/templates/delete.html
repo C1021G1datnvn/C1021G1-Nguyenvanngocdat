@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>Xoá Sổ Tiết Kiệm</h3>
+<p>
+    <a th:href="@{/bank}">
+       Quay lại trang
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/delete}" th:object="${soTietKiem}"
+          method="post" novalidate="novalidate">
+        <input type="hidden" name="id" th:field="*{id}"/>
+        <div>
+            <label>Mã STK</label>
+            <input type="text" th:field="*{maSTK}"/>
+        </div>
+        <div>
+            <label>Mã Khách Hàng</label>
+            <input type="text" th:field="*{maKhachHang}"/>
+        </div>
+        <div>
+            <label>Thời gian gửi</label>
+            <input type="text" th:field="*{timeGui}"/>
+        </div>
+        <div>
+            <label>Kỳ hạn</label>
+            <input type="text" th:field="*{kyHan}"/>
+        </div>
+        <div>
+            <label>Số tiền</label>
+            <input type="text" th:field="*{soTien}"/>
+        </div>
+
+        <input type="submit" value="Delete"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

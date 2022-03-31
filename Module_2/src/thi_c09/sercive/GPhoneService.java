@@ -9,13 +9,17 @@ import java.util.List;
 import java.util.Scanner;
 
 public class GPhoneService implements IPhone{
+    // file data
     public static final String GPHONE = "D:\\C1021G1-Nguyenvanngocdat\\Module_2\\src\\thi_c09\\data_phone\\gphone.csv";
+
     public static List<GenuinePhone> genuinePhoneList = new ArrayList<>();
     public static Scanner scanner = new Scanner(System.in);
     public static boolean check = false;
+
     public static void GPhoneService() {
         genuinePhoneList = readGphone();
     }
+
     public static void writeGphone() {
         try {
             FileWriter fileWriterGphone = new FileWriter(GPHONE);
@@ -64,6 +68,7 @@ public class GPhoneService implements IPhone{
 
         System.out.println("Nhập tên của điện thoại xách tay: ");
         String namePhone = Validation.checkNamePhone();
+
         do {
             check = false;
             try {
@@ -76,6 +81,7 @@ public class GPhoneService implements IPhone{
                 continue;
             }
         }while (check);
+
         do {
             check = false;
             try {
@@ -132,7 +138,6 @@ public class GPhoneService implements IPhone{
             if (idRemove == genuinePhoneList.get(i).getId()) {
                 System.out.println("yes/no");
                 String yes = scanner.nextLine();
-
                 if (yes.equals("yes")) {
                     genuinePhoneList.remove(i);
                     System.out.println("Đã xoá thành công!");

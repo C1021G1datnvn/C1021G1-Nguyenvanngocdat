@@ -36,7 +36,7 @@ public class BlogSecurityApplication extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .formLogin()
-                .defaultSuccessUrl("/student").permitAll()
+                .defaultSuccessUrl("/").permitAll()
                 .and()
                 .authorizeRequests().anyRequest().authenticated();
     }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h3>List Bank BookingPass</h3>
+<p>
+    <a th:href="@{/create}">
+        Thêm Mới Sổ Tiết Kiệm
+    </a>
+</p>
+<div>
+    <div th:if="${message}">
+        <span th:text="${message}"></span>
+    </div>
+</div>
+
+<table id = "user">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Mã STK</th>
+        <td>Tên Khách Hàng</td>
+        <th>Mã Khách Hàng</th>
+        <th>Ngày Gửi</th>
+        <th>Kỳ Hạn</th>
+        <th>Số Tiền Gửi</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="bank : ${soTietKiemList}">
+        <td th:text="${bank.getId()}"></td>
+        <td th:text="${bank.getMaSTK()}"></td>
+        <td th:if="${bank.customers}" th:text="${bank.customers.nameCustomer}"></td>
+        <td th:text="${bank.getMaKhachHang()}"></td>
+        <td th:text="${bank.getTimeGui()}"></td>
+        <td th:text="${bank.getKyHan()}"></td>
+        <td th:text="${bank.getSoTien()}"></td>
+        <td><a th:href="@{/edit/__${bank.id}__}">edit</a></td>
+        <td><a th:href="@{/delete/__${bank.id}__}">delete</a></td>
+        <td><a th:href="@{/view/__${bank.id}__}">view</a></td>
+    </tr>
+    </tbody>
+</table>
+<!--<div>-->
+<!--    <a th:href="@{'/bank'(page = ${soTietKiemList.number - 1})}"-->
+<!--       th:if="${soTietKiemList.hasPrevious()}">Previous</a>-->
+<!--    <span th:text="${soTietKiemList.number + 1}"></span>-->
+<!--    / <span th:text="${soTietKiemList.totalPages}"></span>-->
+<!--    <a th:href="@{'/bank'(page = ${soTietKiemList.number + 1})}"-->
+<!--       th:if="${soTietKiemList.hasNext()}">Next</a>-->
+<!--</div>-->
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
