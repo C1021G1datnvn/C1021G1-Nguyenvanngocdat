@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <label for="number1" class="form-label">Number 1</label>
+      <input type="number" id="number1" class="form-control" [(ngModel)]="number1">
+    </div>
+    <div class="col-3">
+      <label for="number2" class="form-label">Number 2</label>
+      <input  type =number id="number2" class="form-control" [(ngModel)]="number2">
+    </div>
+    <div class="col-3">
+      <label for="select" class="form-label">Select Action</label>
+      <select id="select" [(ngModel)]="action" class="form-control">
+        <option value="Add">Add</option>
+        <option value="Sub">Sub</option>
+        <option value="Mul">Mul</option>
+        <option value="Div">Div</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-3">
+    <button (click)="calculate()">Calculate</button>
+  </div>
+  <div>
+    <h4>Result : {{result}}</h4>
+  </div>
+</div>
