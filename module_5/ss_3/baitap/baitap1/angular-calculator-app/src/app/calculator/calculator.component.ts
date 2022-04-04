@@ -21,6 +21,8 @@ export class CalculatorComponent implements OnInit {
     switch (this.action) {
       case 'Add':
         this.result = this.number1 + this.number2;
+        break;
+      // tslint:disable-next-line:no-switch-case-fall-through
       case 'Sub':
         this.result = this.number1 - this.number2;
         break;
