@@ -4,12 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { LikeComponent } from './like/like.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticleComponent,
-    LikeComponent
+    LikeComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
