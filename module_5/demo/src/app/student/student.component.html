@@ -1,7 +1,30 @@
-<h3>Student Information</h3>
-<p>Id: {{student.id}}</p>
-<p>Name: {{student.name}}</p>
-<p>Address: {{student.address}}</p>
-<p>Age: {{student.age}}</p>
-<p [style.color]="color">Mark: {{student.mark}}</p>
-<input type="number" [value]="student.mark" #element (click)="changMark(element.value)">
+<h2 class="d-flex justify-content-center text-decoration-underline" style="color: darkslateblue">Student List</h2>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Age</th>
+      <th>Mark</th>
+      <th class="d-flex justify-content-center">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let studentList of student">
+          <td>{{studentList.id}}</td>
+          <td>{{studentList.name | titlecase }}</td>
+          <td>{{studentList.address}}</td>
+          <td>{{studentList.age}}</td>
+          <td>{{studentList.mark}}</td>
+        <td *ngIf="studentList.mark <= 6" class="text-danger">Fail</td>
+        <td *ngIf="studentList.mark > 6" class="text-success">Pass</td>
+        <td>
+          <a class="m-2 btn btn-success">Detail</a>
+          <a class="m-2 btn btn-danger">Delete</a>
+          <a class="m-2 btn btn-warning">Edit</a>
+        </td>
+      </tr>
+  </tbody>
+</table>
+<app-student-child></app-student-child>

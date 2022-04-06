@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { StudentComponent } from './student/student.component';
 import { StudentChildComponent } from './student-child/student-child.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentComponent,
-    StudentChildComponent
+    StudentChildComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

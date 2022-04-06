@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {StudentDao} from "../StudentDao/StudentDao";
 
 
 
@@ -8,22 +9,15 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-  color: String = "blue";
+
+
   // @ts-ignore
-  student : Student = {
-    id: 1,
-    name: "Đạt",
-    address: "Đà Nẵng",
-    age: 18,
-    mark: 7
-}
+  student : Student[] = StudentDao.students;
   constructor() {
   }
 
   ngOnInit(): void {
   }
 
-  changMark(mark: string) {
-    this.student.mark = mark;
-  }
+
 }
