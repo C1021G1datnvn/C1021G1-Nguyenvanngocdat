@@ -1,7 +1,7 @@
 <h3>Student Information</h3>
-<p>Id: {{student.id}}</p>
-<p>Name: {{student.name}}</p>
-<p>Address: {{student.address}}</p>
-<p>Age: {{student.age}}</p>
-<p [style.color]="color">Mark: {{student.mark}}</p>
-<input type="number" [value]="student.mark" #element (click)="changMark(element.value)">
+<p>Id: {{receive.id}}</p>
+<p>Name: {{receive.name}}</p>
+<p>Address: {{receive.address}}</p>
+<p>Age: {{receive.age}}</p>
+<p [style.color]="color">Mark: {{receive.mark}}</p>
+<input type="number" [value]="receive.mark" #element (click)="changMark(element.value)">

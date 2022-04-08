@@ -1,6 +1,8 @@
+import {StudentInterface} from "../model/studentInterface";
+
 export class StudentDao {
-  // @ts-ignore
-  public static students: Student[] = [
+  public static students: StudentInterface[] = [
+
     {
       id: 1,
       name: "nguyễn văn ngọc đạt",

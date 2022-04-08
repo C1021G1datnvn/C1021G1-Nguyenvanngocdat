@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {StudentDao} from "../StudentDao/StudentDao";
+import {StudentInterface} from "../model/studentInterface";
 
 
 
@@ -11,8 +12,17 @@ import {StudentDao} from "../StudentDao/StudentDao";
 export class StudentComponent implements OnInit {
 
 
-  // @ts-ignore
-  student : Student[] = StudentDao.students;
+  sendValue: StudentInterface = {
+    id: 1,
+    name: "nguyễn văn ngọc đạt",
+    address: "đà nẵng",
+    age: 18,
+    mark: 6
+  };
+
+  student : StudentInterface[] = StudentDao.students;
+
+
   constructor() {
   }
 

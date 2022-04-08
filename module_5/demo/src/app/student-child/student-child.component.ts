@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {StudentInterface} from "../model/studentInterface";
+
 
 @Component({
   selector: 'app-student-child',
@@ -7,20 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentChildComponent implements OnInit {
   color: String = "blue";
-  // @ts-ignore
-  student : Student = {
-    id: 1,
-    name: "Đạt",
-    address: "Đà Nẵng",
-    age: 18,
-    mark: 7
-  }
+
+  @Input()
+    // @ts-ignore
+  receive : StudentInterface;
+
   constructor() { }
 
   ngOnInit(): void {
   }
   changMark(mark: string) {
-    this.student.mark = mark;
+    // @ts-ignore
+    this.receive.mark = mark;
   }
 
 }
