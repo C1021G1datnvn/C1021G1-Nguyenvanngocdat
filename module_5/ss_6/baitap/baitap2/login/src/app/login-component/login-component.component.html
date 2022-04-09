@@ -1,0 +1,23 @@
+<h1 class="d-flex justify-content-center">Login</h1>
+<form [formGroup]="loginForm">
+<div class="container">
+  <div class="row">
+    <div>
+      <label for="email">Email</label>
+      <input class="form-control" style="max-width: 250px" type="text" id="email" name="email" formControlName="email">
+    </div>
+    <div *ngIf="loginForm.get('email').errors.email && loginForm.get('email').touched" style="color: red">
+      Phải đúng định dạng email !
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input class="form-control" style="max-width: 250px" type="password" id="password" name="password" formControlName="password">
+      <div *ngIf="loginForm.get('password').errors.minLength && loginForm.get('password').touched" style="color: red">
+        Phải lớn hơn 6 ký tự !
+      </div>
+    </div>
+  </div>
+  <br>
+  <button class="btn btn-primary" type="submit" >Login</button>
+</div>
+</form>

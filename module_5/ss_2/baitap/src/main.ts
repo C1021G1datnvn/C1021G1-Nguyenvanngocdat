@@ -1,18 +1,14 @@
-let fibonacci = (num: number): number => {
-    if (num <= 1) {
-        return num;
-    }else {
-        return fibonacci(num -1 + fibonacci(num - 2));
+function fibonacci(i: number): number {
+    if (i <= 1) {
+        return 1;
     }
+    return  fibonacci(i - 1) + fibonacci(i -2);
 }
 
-let sum: number = 0
-let printF = (num: number): void => {
-    for (let i = 1; i <= num; i++) {
-        console.log(`số fibonacci thứ ${i} là : `+fibonacci(i))
+let sum: number = 0;
+    for (let i = 0; i < 15; i++) {
+        console.log(fibonacci(i))
         sum += fibonacci(i)
     }
-    console.log(`tổng ${num} số fibonacci đầu tiên là :` + sum)
-}
+    console.log(`Tổng là: ${sum}`);
 
-printF(10)
