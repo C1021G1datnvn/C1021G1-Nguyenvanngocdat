@@ -1,5 +1,5 @@
-<h1>Tạo sản phẩm mới</h1>
-<form [formGroup]="productForm" (ngSubmit)="submit()">
+<h1>Chỉnh sửa sản phẩm</h1>
+<form [formGroup]="productForm" (ngSubmit)="ongSubmit()">
   <table>
     <tr>
       <td>Mã sản phẩm:</td>
@@ -20,7 +20,8 @@
     <tr>
       <td></td>
       <td>
-        <button type="submit">Tạo mới</button>
+        <button type="submit">Save</button>
+        <button><a routerLink="/product/list">Back to list</a></button>
       </td>
     </tr>
   </table>

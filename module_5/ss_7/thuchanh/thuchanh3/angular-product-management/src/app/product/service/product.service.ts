@@ -39,4 +39,19 @@ export class ProductService {
   saveProduct(product) {
     this.products.push(product);
   }
+  findById(id: number) {
+    for (let product of this.products) {
+      if (id === product.id) {
+        return product;
+      }
+    }
+  }
+  updateProduct(id: number, product: Product) {
+    for (let i = 0; i < this.products.length; i++) {
+      if (id === this.products[i].id) {
+        this.products[i] = product;
+      }
+    }
+  }
+
 }
