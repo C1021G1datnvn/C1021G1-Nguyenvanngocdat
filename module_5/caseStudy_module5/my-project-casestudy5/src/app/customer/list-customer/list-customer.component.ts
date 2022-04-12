@@ -20,6 +20,7 @@ export class ListCustomerComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.listCustomer = CustomerDao.customerList;
   }
 
   deleteCustomer(id:number) {

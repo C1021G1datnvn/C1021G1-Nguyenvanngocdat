@@ -1,31 +1,81 @@
 <br>
 <h4 class="d-flex justify-content-center text-decoration-underline"> Edit Customer</h4>
-<form novalidate class="row justify-content-md-center">
+<form [formGroup]="editCustomer" novalidate class="row justify-content-md-center">
   <div class="col-md-8">
     <div class="form-group row">
       <label for="example-text-input" class="col-md-2 col-form-label">Name:</label>
       <div class="col-md-10">
-        <input class="form-control" type="text" id="example-text-input">
+        <input class="form-control mb-4" type="text" id="example-text-input" name="name" formControlName="name">
       </div>
     </div>
+    <div class="alert alert-danger" role="alert"
+         *ngIf=" editCustomer.get('name')?.invalid &&
+            editCustomer.get('name')?.touched">
+      Phải đúng định dạng tên!
+    </div>
+
+    <div class="form-group row">
+      <label for="example-text-input" class="col-md-2 col-form-label">Birthday:</label>
+      <div class="col-md-10">
+        <input class="form-control mb-4" type="date" id="example-birthday-input" name="birthday" formControlName="birthday">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="example-text-input" class="col-md-2 col-form-label">CMND:</label>
+      <div class="col-md-10">
+        <input class="form-control mb-4" type="text" id="example-card-input" name="card" formControlName="card">
+      </div>
+    </div>
+    <div class="alert alert-danger" role="alert"
+         *ngIf=" editCustomer.get('card')?.invalid &&
+            editCustomer.get('card')?.touched">
+      Phải đúng định dạng chứng minh nhân dân!
+    </div>
+
     <div class="form-group row">
       <label for="example-phone-input" class="col-md-2 col-form-label">Phone:</label>
       <div class="col-md-10">
-        <input class="form-control" type="text" id="example-phone-input">
+        <input class="form-control mb-4" type="text" id="example-phone-input" name="phone" formControlName="phone">
       </div>
     </div>
+    <div class="alert alert-danger" role="alert"
+         *ngIf=" editCustomer.get('phone')?.invalid &&
+            editCustomer.get('phone')?.touched">
+      Phải đúng định dạng số điện thoại!
+    </div>
+
     <div class="form-group row">
       <label for="example-email-input" class="col-md-2 col-form-label">Email:</label>
       <div class="col-md-10">
-        <input class="form-control" type="email" id="example-email-input">
+        <input class="form-control mb-4" type="email" id="example-email-input" name="email" formControlName="email">
       </div>
     </div>
+    <div class="alert alert-danger" role="alert"
+         *ngIf=" editCustomer.get('email')?.invalid &&
+            editCustomer.get('email')?.touched">
+      Phải đúng định dạng email!
+    </div>
+
+    <div class="form-group row">
+      <label for="example-text-input" class="col-md-2 col-form-label">Type Customer:</label>
+      <div class="col-md-10">
+        <input class="form-control mb-4" type="text" id="example-typeCustomer-input" name="customerType" formControlName="customerType">
+      </div>
+    </div>
+
     <div class="form-group row">
       <label for="example-address-input" class="col-md-2 col-form-label">Address:</label>
       <div class="col-md-10">
-        <input class="form-control" type="text" id="example-address-input">
+        <input class="form-control mb-4" type="text" id="example-address-input" name="address" formControlName="address">
       </div>
     </div>
+    <div class="alert alert-danger" role="alert"
+         *ngIf=" editCustomer.get('address')?.invalid &&
+            editCustomer.get('address')?.touched">
+      Phải đúng định dạng địa chỉ!
+    </div>
+
     <div class="form-group row">
       <div class="col-md-10 offset-md-2">
         <button class="btn btn-primary" type="submit">Submit</button>

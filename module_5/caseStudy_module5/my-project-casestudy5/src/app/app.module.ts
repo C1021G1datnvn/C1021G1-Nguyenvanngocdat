@@ -14,6 +14,7 @@ import { CreateEmployeeComponent } from './employee/create-employee/create-emplo
 import { EditEmployeeComponent } from './employee/edit-employee/edit-employee.component';
 import { DetailCustomerComponent } from './customer/detail-customer/detail-customer.component';
 import { ListServiceComponent } from './service/list-service/list-service.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,10 +31,11 @@ import { ListServiceComponent } from './service/list-service/list-service.compon
     DetailCustomerComponent,
     ListServiceComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

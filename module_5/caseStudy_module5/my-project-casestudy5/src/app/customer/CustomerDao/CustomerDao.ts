@@ -1,8 +1,10 @@
 import {CustomerInterface} from "../model/CustomerInterface";
 import {Injectable} from "@angular/core";
+
 @Injectable({
   providedIn:"root"
 })
+
 export class CustomerDao {
   public static customerList: CustomerInterface[] = [
     {
