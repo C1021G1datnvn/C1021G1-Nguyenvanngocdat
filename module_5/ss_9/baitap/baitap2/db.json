@@ -1,0 +1,49 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "categoryName": "Sam Sung"
+    },
+    {
+      "id": 2,
+      "categoryName": "Apple"
+    },
+    {
+      "id": 3,
+      "categoryName": "Nokia"
+    },
+    {
+      "id": 4,
+      "categoryName": "LG"
+    }
+  ],
+  "product": [
+    {
+      "id": 4,
+      "name": "45",
+      "price": "45",
+      "category": {
+        "id": 3,
+        "categoryName": "Nokia"
+      }
+    },
+    {
+      "id": 6,
+      "name": "6",
+      "price": "6",
+      "category": {
+        "id": 4,
+        "categoryName": "LG"
+      }
+    },
+    {
+      "id": "15",
+      "name": "a",
+      "price": "a",
+      "category": {
+        "id": 2,
+        "categoryName": "Apple"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<form [formGroup]="createForm" (ngSubmit)="add()">
+  <div>
+    <label>id: </label>
+    <input formControlName="id" type="text">
+  </div>
+  <div>
+    <label>name: </label>
+    <input formControlName="name" type="text">
+  </div>
+  <div>
+    <label>price: </label>
+    <input formControlName="price" type="text">
+  </div>
+  <select formControlName="category"  ngModel="1">
+    <option   *ngFor="let type of categoryList" [value]="type.id">{{type.categoryName}}</option>
+  </select>
+  <button>Add</button>
+</form>
