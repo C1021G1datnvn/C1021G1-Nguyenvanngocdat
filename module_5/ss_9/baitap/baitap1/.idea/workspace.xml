@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="763ed281-2d85-4726-becb-cba5aad2f78e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../module_4/thi_C1021G1_module4/src/main/java/com/example/thic10_module4/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_4/thi_C1021G1_module4/src/main/java/com/example/thic10_module4/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/customer/create-customer/create-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/customer/create-customer/create-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/customer/create-customer/create-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/customer/create-customer/create-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/customer/list-customer/list-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/customer/list-customer/list-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/employee/create-employee/create-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/app/employee/create-employee/create-employee.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/my-project-casestudy5/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../caseStudy_module5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../caseStudy_module5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo/src/app/reactive-form/reactive-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo/src/app/reactive-form/reactive-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss_7/baitap/baitap1/project-bt1-ss7/src/app/service/dictionary-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss_7/baitap/baitap1/project-bt1-ss7/src/app/service/dictionary-service.service.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="27jRj46jdQcl8eL20Sl8ncvIjzu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="763ed281-2d85-4726-becb-cba5aad2f78e" name="Default Changelist" comment="" />
+      <created>1649831640515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649831640515</updated>
+      <workItem from="1649831641821" duration="5000" />
+    </task>
+    <servers />
+  </component>
+</project>
