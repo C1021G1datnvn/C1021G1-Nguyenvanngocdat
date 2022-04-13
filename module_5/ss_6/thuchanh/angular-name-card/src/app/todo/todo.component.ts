@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Todo} from "../todo";
 import {FormControl} from "@angular/forms";
+import {TodoServiceService} from "../service/todo-service.service";
 let _id = 1;
 @Component({
   selector: 'app-todo',
@@ -12,7 +13,7 @@ export class TodoComponent implements OnInit {
   content = new FormControl();
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
   toggleTodo(i: number) {
     this.todos[i].complete = !this.todos[i].complete;
